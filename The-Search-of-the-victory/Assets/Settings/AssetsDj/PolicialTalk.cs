@@ -1,34 +1,72 @@
 using TMPro;
 using UnityEngine;
-using UnityEngine.Events;
+using TMPro;
+using System.Collections;
 
 public class PolicialTalk : MonoBehaviour
 {
-    [SerializeField] TMP_Text convesar;
-    [SerializeField] UnityEvent conversaEvent;
-    bool primeiraVez;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    public static PolicialTalk Instance;
+
+    public GameObject dialogueBox;
+    public TextMeshProUGUI dialogueText;
+    public float typingSpeed = 0.04f;
+
+    private string[] lines;
+    private int currentLine;
+    private bool isTyping;
+
+    void Awake()
     {
-        
+        if (Instance == null) Instance = this;
+        else Destroy(gameObject);
+
+        dialogueBox.SetActive(false);
     }
 
-    // Update is called once per frame
     void Update()
     {
-        
+        if (dialogueBox.activeSelf && Input.GetKeyDown(KeyCode.E))
+        {
+            if (isTyping)
+            {
+                StopAllCoroutines();
+                dialogueText.text = lines[currentLine];
+                isTyping = false;
+            }
+            else
+            {
+                currentLine++;
+                if (currentLine < lines.Length)
+                {
+                    StartCoroutine(TypeLine(lines[currentLine]));
+                }
+                else
+                {
+                    dialogueBox.SetActive(false);
+                }
+            }
+        }
     }
-    public void  OnTriggerEnter2D(Collider2D other)
+
+    public void StartDialogue(string[] dialogueLines)
     {
-        conversaEvent.Invoke();
-        if (primeiraVez == false)
+        lines = dialogueLines;
+        currentLine = 0;
+        dialogueBox.SetActive(true);
+        StartCoroutine(TypeLine(lines[currentLine]));
+    }
+
+    IEnumerator TypeLine(string line)
+    {
+        dialogueText.text = "";
+        isTyping = true;
+
+        foreach (char c in line)
         {
-            convesar.text = "você não é policial, logo não irá entrar";
-            primeiraVez = true;
+            dialogueText.text += c;
+            yield return new WaitForSeconds(typingSpeed);
         }
-        else if (primeiraVez == true)
-        {
-            convesar.text = "cara nmrl ja falei q n tem cm bro, assim se vai entrar na chapa!";
-        }
+
+        isTyping = false;
     }
 }
