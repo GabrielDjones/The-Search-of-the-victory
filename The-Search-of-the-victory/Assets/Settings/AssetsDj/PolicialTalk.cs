@@ -1,6 +1,6 @@
 using TMPro;
 using UnityEngine;
-using TMPro;
+
 using System.Collections;
 
 public class PolicialTalk : MonoBehaviour

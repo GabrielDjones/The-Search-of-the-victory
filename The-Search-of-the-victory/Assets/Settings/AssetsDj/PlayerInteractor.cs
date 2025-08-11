@@ -3,13 +3,14 @@ using UnityEngine;
 public class PlayerInteractor : MonoBehaviour
 {
   
+  
     public Transform interactionPoint;
     public float interactionRadius = 0.5f;
     public LayerMask interactableLayer;
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Z))
+        if (Input.GetKeyDown(KeyCode.E))
         {
             Collider2D hit = Physics2D.OverlapCircle(interactionPoint.position, interactionRadius, interactableLayer);
             if (hit != null)
@@ -32,4 +33,3 @@ public class PlayerInteractor : MonoBehaviour
         }
     }
 }
-
