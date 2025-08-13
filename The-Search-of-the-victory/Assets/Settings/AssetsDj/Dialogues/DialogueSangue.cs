@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class DialogueTrigger : MonoBehaviour
+public class DialogueSangue : MonoBehaviour
 {
     [TextArea(2, 5)]
     public string[] lines;
@@ -13,14 +13,7 @@ public class DialogueTrigger : MonoBehaviour
 
         hasInteracted = true;
         PolicialTalk.Instance.StartDialogue(lines);
-        
-        
-    }
-    private void OnTriggerEnter2D(Collider2D other)
-    {
-        if (other.CompareTag("objeto"))
-        {
-            InventoryCode.Instance.AddInventory();
-        }
+
+
     }
 }
