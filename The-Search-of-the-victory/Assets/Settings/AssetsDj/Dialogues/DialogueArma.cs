@@ -13,7 +13,7 @@ public class DialogueArma : MonoBehaviour
 
         hasInteracted = true;
         PolicialTalk.Instance.StartDialogue(lines);
-
+        TextManager.Instance.StartDialogue(lines);
 
     }
 }
