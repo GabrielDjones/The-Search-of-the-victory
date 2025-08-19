@@ -1,9 +1,11 @@
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.SceneManagement;
 
 public class Pistas : MonoBehaviour
 {
+    DialogueTrigger dialogueTrigger;
     DialogueArma gunTrigger;
     DialogueSangue sangueTrigger;
     DialogueSecador secadorTrigger;
@@ -19,6 +21,7 @@ public class Pistas : MonoBehaviour
     [System.Obsolete]
     void Start()
     {
+        dialogueTrigger = FindObjectOfType(typeof(DialogueTrigger)) as DialogueTrigger;
       secadorTrigger = FindObjectOfType(typeof(DialogueSecador)) as DialogueSecador;
       gunTrigger = FindObjectOfType(typeof(DialogueArma)) as DialogueArma;
       sangueTrigger = FindObjectOfType(typeof (DialogueSangue))as DialogueSangue;
@@ -62,5 +65,13 @@ public class Pistas : MonoBehaviour
             hints++;
         }
        
+    }
+    public void SaidaFalsa()
+    {
+         dialogueTrigger.Interact();    
+    }
+    public void SceneSwitcher(string sceneName)
+    {
+        SceneManager.LoadScene(sceneName);
     }
 }
