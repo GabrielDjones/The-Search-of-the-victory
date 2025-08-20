@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class DialogueSangue : MonoBehaviour
+public class DialogueSecador : MonoBehaviour
 {
     [TextArea(2, 5)]
     public string[] lines;
