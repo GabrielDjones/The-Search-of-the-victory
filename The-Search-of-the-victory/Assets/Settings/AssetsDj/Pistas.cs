@@ -16,15 +16,16 @@ public class Pistas : MonoBehaviour
     bool gunInterect;
     bool sangueInterect;
     bool secadorInterect;
+    bool cenaPolicial;
     int hints;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
-    [System.Obsolete]
+    
     void Start()
     {
-        dialogueTrigger = FindObjectOfType(typeof(DialogueTrigger)) as DialogueTrigger;
-      secadorTrigger = FindObjectOfType(typeof(DialogueSecador)) as DialogueSecador;
-      gunTrigger = FindObjectOfType(typeof(DialogueArma)) as DialogueArma;
-      sangueTrigger = FindObjectOfType(typeof (DialogueSangue))as DialogueSangue;
+      dialogueTrigger = FindAnyObjectByType(typeof(DialogueTrigger)) as DialogueTrigger;
+      secadorTrigger = FindAnyObjectByType(typeof(DialogueSecador)) as DialogueSecador;
+      gunTrigger = FindAnyObjectByType(typeof(DialogueArma)) as DialogueArma;
+      sangueTrigger = FindAnyObjectByType(typeof (DialogueSangue))as DialogueSangue;
     }
 
     // Update is called once per frame
