@@ -1,6 +1,7 @@
 using UnityEngine;
 
 public class WalkingCode : MonoBehaviour
+
 {
     private float eixoX;
     private float eixoY;
