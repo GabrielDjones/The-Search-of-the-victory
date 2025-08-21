@@ -4,26 +4,33 @@ using UnityEngine.Events;
 public class GameManager : MonoBehaviour
 {
     DialogueTrigger dialogueTrigger;
+
     int clicks;
     [SerializeField] UnityEvent Teste;
 
     bool started;
+    bool testeClose = true;
     void Start()
     {
         dialogueTrigger = FindAnyObjectByType(typeof(DialogueTrigger)) as DialogueTrigger;
     }
-
-    // Update is called once per frame
     void Update()
     {
-       if(started == true && Input.GetKeyDown(KeyCode.E) )
+       if(started == true && Input.GetKeyDown(KeyCode.E))
+       {
+          clicks++;
+       }
+
+       else if (testeClose == false && Input.GetKeyDown(KeyCode.E))
+       {
+          clicks++;
+       }
+
+       if (clicks > 2 && testeClose)
         {
-            clicks++;
-        }
-        
-       if ( clicks > 3) 
-        {
-          Teste.Invoke();
+            Teste.Invoke();
+            testeClose = false;
+            started = false;
         }
     }
     public void CloseWindow()

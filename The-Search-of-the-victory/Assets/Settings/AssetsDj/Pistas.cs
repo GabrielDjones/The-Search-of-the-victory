@@ -16,6 +16,7 @@ public class Pistas : MonoBehaviour
     bool gunInterect;
     bool sangueInterect;
     bool secadorInterect;
+    bool cenaPolicial;
     int hints;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     
