@@ -10,7 +10,7 @@ public class VidaCode : MonoBehaviour
     public float life = 3f;// float pois o jogador não se movimenta no eixo x 0.1 unidades no trecho de um frame
     public float lifeMax = 3f;
     UnityEvent Defeat;
-
+    
     private void Start()
     {
         dialoguePistas = FindAnyObjectByType<DialoguePistas>();
@@ -22,10 +22,14 @@ public class VidaCode : MonoBehaviour
         slider.value = life;
         slider.maxValue = lifeMax;
     }
+    public void RightChoice()
+    {
+        dialoguePistas.Interact();
+    }
     public void Loselife()
     {
-        life--;
-        dialoguePistas.InteractWrong();
+        life--;    
+        dialoguePistas.InteractWrong();             
         if (life == 0)
         {
             SceneManager.LoadScene(sceneName);     

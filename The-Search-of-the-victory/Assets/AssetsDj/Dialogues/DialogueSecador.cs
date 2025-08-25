@@ -7,10 +7,7 @@ public class DialogueSecador : MonoBehaviour
     public string[] lines;
 
     private bool hasInteracted = false;
-    private void Start()
-    {
-     
-    }
+
     public void Interact()
     {
         if (hasInteracted) return;

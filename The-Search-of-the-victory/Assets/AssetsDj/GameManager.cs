@@ -5,10 +5,13 @@ public class GameManager : MonoBehaviour
 {
     DialogueTrigger dialogueTrigger;
 
-    int clicks;
-    [SerializeField] UnityEvent Teste;
+    public  int clicks;
 
-    bool started;
+    [SerializeField] UnityEvent Teste;
+    [SerializeField] UnityEvent escolhaDePista;
+
+    bool started = false;
+    bool pistaClose = true;
     bool testeClose = true;
     void Start()
     {
@@ -16,20 +19,26 @@ public class GameManager : MonoBehaviour
     }
     void Update()
     {
-       if(started == true && Input.GetKeyDown(KeyCode.E))
+       if(started && Input.GetKeyDown(KeyCode.E))
        {
           clicks++;
        }
 
-       else if (testeClose == false && Input.GetKeyDown(KeyCode.E))
+       if (testeClose == false && Input.GetKeyDown(KeyCode.E))
        {
-          clicks++;
+            clicks++;
        }
 
-       if (clicks > 2 && testeClose)
+       if (clicks == 4 && pistaClose == true)
+       {
+            escolhaDePista.Invoke();
+            pistaClose = false;
+            testeClose = true;
+       }
+              
+       if (clicks == 2 && testeClose)
         {
             Teste.Invoke();
-            testeClose = false;
             started = false;
         }
     }
@@ -37,5 +46,9 @@ public class GameManager : MonoBehaviour
     {
         dialogueTrigger.Interact();
         started = true;
+    }
+    public void TesteCloser()
+    {
+        testeClose = false;
     }
 }

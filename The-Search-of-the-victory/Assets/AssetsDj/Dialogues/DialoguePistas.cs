@@ -4,33 +4,42 @@ public class DialoguePistas : MonoBehaviour
 {
 
     [TextArea(2, 5)]
-    public string[] lines;
+    public string[] linesAcerto;
     [TextArea(2, 5)]
-    public string[] lines2;
+    public string[] lines2Acerto;
     [TextArea(2, 5)]
-    public string[] lines3;
+    public string[] linesErro;
+    [TextArea(2, 5)]
+    public string[] lines2Erro;
     int times;
-    private bool hasInteracted = false;
+
    
     public void Interact()
     {
-        if (hasInteracted) return;
-        if (times > 0)
+       
+        if (times == 0)
         {
-            PolicialTalk.Instance.StartDialogue(lines);
+            PolicialTalk.Instance.StartDialogue(linesAcerto);
             times++;
         }
         else if (times == 1)
         {
-            PolicialTalk.Instance.StartDialogue(lines2);
+            PolicialTalk.Instance.StartDialogue(lines2Acerto);
             times++;
         }
-        hasInteracted = true;
+        
     }
     public void InteractWrong()
     {
-        if (hasInteracted) return;
-        PolicialTalk.Instance.StartDialogue(lines3);
-        hasInteracted = true;
+        if (times == 0)
+        {
+            PolicialTalk.Instance.StartDialogue(linesErro);
+            times++;
+        }
+        else if(times == 1)
+        {
+            PolicialTalk.Instance.StartDialogue(lines2Erro);
+        }
+         
     }
 }
