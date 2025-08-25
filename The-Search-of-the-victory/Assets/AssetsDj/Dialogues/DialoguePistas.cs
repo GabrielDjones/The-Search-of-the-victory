@@ -17,12 +17,12 @@ public class DialoguePistas : MonoBehaviour
         if (hasInteracted) return;
         if (times > 0)
         {
-            TextManager.Instance.StartDialogue(lines);
+            PolicialTalk.Instance.StartDialogue(lines);
             times++;
         }
         else if (times == 1)
         {
-            TextManager.Instance.StartDialogue(lines2);
+            PolicialTalk.Instance.StartDialogue(lines2);
             times++;
         }
         hasInteracted = true;
@@ -30,7 +30,7 @@ public class DialoguePistas : MonoBehaviour
     public void InteractWrong()
     {
         if (hasInteracted) return;
-        TextManager.Instance.StartDialogue(lines3);
+        PolicialTalk.Instance.StartDialogue(lines3);
         hasInteracted = true;
     }
 }
