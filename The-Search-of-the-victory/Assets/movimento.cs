@@ -19,9 +19,27 @@ public class movimento : MonoBehaviour
 
     void MoveAnimationLogic(Vector2 moveSpeed)
     {
-        if (moveSpeed.y != 0)
+        if (moveSpeed.y < 0)
         {
             animator.Play("player walk foward");
+            return;
+        }
+
+        if (moveSpeed.y > 0)
+        {
+            animator.Play("walk back");
+            return;
+        }
+
+        if (moveSpeed.x < 0)
+        {
+            animator.Play("player walk foward");
+            return;
+        }
+
+        if (moveSpeed.x > 0)
+        {
+            animator.Play("walk back");
             return;
         }
         animator.Play("idle");
