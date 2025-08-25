@@ -3,45 +3,61 @@ using UnityEngine.Events;
 
 public class GameManager : MonoBehaviour
 {
-    DialogueTrigger dialogueTrigger;
+    
 
+    DialogueTrigger dialogueTrigger;
+    PolicialTalk policialTalk;
     public  int clicks;
 
-    [SerializeField] UnityEvent Teste;
-    [SerializeField] UnityEvent escolhaDePista;
+    [SerializeField] UnityEvent TesteEvent;
+    [SerializeField] UnityEvent escolhaDePistaEvent;
+    [SerializeField] UnityEvent sapatoEvent;
 
     bool started = false;
     bool pistaClose = true;
     bool testeClose = true;
+    bool sapatoClose = true;
+    bool clicking;
     void Start()
     {
         dialogueTrigger = FindAnyObjectByType(typeof(DialogueTrigger)) as DialogueTrigger;
+        policialTalk = FindAnyObjectByType(typeof (PolicialTalk)) as PolicialTalk;
     }
     void Update()
     {
-       if(started && Input.GetKeyDown(KeyCode.E))
+       
+       if(started && Input.GetKeyDown(KeyCode.E) && clicking == false)
        {
           clicks++;
        }
 
-       if (testeClose == false && Input.GetKeyDown(KeyCode.E))
+       if (clicks == 3 && testeClose == true)
        {
-            clicks++;
+            TesteEvent.Invoke();
+            started = false;
+            testeClose = false;
        }
 
-       if (clicks == 4 && pistaClose == true)
+       if (clicks == 4 && pistaClose)
        {
-            escolhaDePista.Invoke();
+            escolhaDePistaEvent.Invoke();
             pistaClose = false;
-            testeClose = true;
+            started = false;
        }
               
-       if (clicks == 2 && testeClose)
-        {
-            Teste.Invoke();
+       if(clicks == 6 && sapatoClose)
+       {
+            sapatoEvent.Invoke();
+            sapatoClose = false;
             started = false;
-        }
+       }
+
     }
+    public void Typing(bool x)
+    {
+        clicking = x;
+    }
+
     public void CloseWindow()
     {
         dialogueTrigger.Interact();
@@ -49,6 +65,6 @@ public class GameManager : MonoBehaviour
     }
     public void TesteCloser()
     {
-        testeClose = false;
+        started = true;
     }
 }
