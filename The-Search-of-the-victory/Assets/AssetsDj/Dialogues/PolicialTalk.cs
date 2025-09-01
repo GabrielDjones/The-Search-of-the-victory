@@ -1,6 +1,5 @@
 using TMPro;
 using UnityEngine;
-
 using System.Collections;
 
 public class PolicialTalk : MonoBehaviour
@@ -34,13 +33,14 @@ public class PolicialTalk : MonoBehaviour
     void Update()
     {
         gameManager.Typing(isTyping);
-        if (dialogueBox.activeSelf && Input.GetKeyDown(KeyCode.E))
+        if (dialogueBox.activeSelf && dialogueBox2 && Input.GetKeyDown(KeyCode.E))
         {
            
             if (isTyping)
             {
                 StopAllCoroutines();
                 dialogueText.text = lines[currentLine];
+                dialogueText2.text = lines[currentLine];
                 isTyping = false;
             }
             else
@@ -53,6 +53,7 @@ public class PolicialTalk : MonoBehaviour
                 else
                 {
                     dialogueBox.SetActive(false);
+                    dialogueBox2.SetActive(false);
                 }
             }
         }
@@ -64,17 +65,20 @@ public class PolicialTalk : MonoBehaviour
         lines = dialogueLines;
         currentLine = 0;
         dialogueBox.SetActive(true);
+        dialogueBox2.SetActive(true);
         StartCoroutine(TypeLine(lines[currentLine]));
     }
 
     IEnumerator TypeLine(string line)
     {
         dialogueText.text = "";
+        dialogueText2.text = "";
         isTyping = true;
 
         foreach (char c in line)
         {
             dialogueText.text += c;
+            dialogueText2.text += c;
             yield return new WaitForSeconds(typingSpeed);
         }
 

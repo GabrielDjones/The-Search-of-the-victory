@@ -13,8 +13,6 @@ public class DialogueSecador : MonoBehaviour
         if (hasInteracted) return;
 
         hasInteracted = true;
-        
-        TextManager.Instance.StartDialogue(lines);
       
         PolicialTalk.Instance.StartDialogue(lines);
     }

@@ -9,15 +9,13 @@ public class Pistas : MonoBehaviour
     DialogueArma gunTrigger;
     DialogueSangue sangueTrigger;
     DialogueSecador secadorTrigger;
-    [SerializeField] UnityEvent gun;
-    [SerializeField] UnityEvent sangue;
-    [SerializeField] UnityEvent secador;
+
     [SerializeField] UnityEvent entregarPistas;
     bool gunInterect;
     bool sangueInterect;
     bool secadorInterect;
-    bool cenaPolicial;
-    int hints;
+    bool botasInterect;
+    public int hints;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     
     void Start()
@@ -40,17 +38,24 @@ public class Pistas : MonoBehaviour
     {
         if (!gunInterect)
         {
-           gun.Invoke();
            gunInterect = true;
-           gunTrigger.Interact();
+           gunTrigger.Interact("arma");
            hints++;
+        }
+    }
+    public void Botas()
+    {
+        if (botasInterect)
+        {
+            botasInterect = true;
+            gunTrigger.Interact("botas");
+            hints++;
         }
     }
     public void Sangue()
     {
         if (!sangueInterect)
         {
-          sangue.Invoke();
           sangueInterect = true;
           sangueTrigger.Interact();
           hints++;
@@ -60,7 +65,6 @@ public class Pistas : MonoBehaviour
     {
         if (!secadorInterect)
         {
-            secador.Invoke();
             secadorInterect = true;
             secadorTrigger.Interact();
             hints++;

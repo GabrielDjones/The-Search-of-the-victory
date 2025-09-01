@@ -3,17 +3,19 @@ using UnityEngine;
 public class DialogueArma : MonoBehaviour
 {
     [TextArea(2, 5)]
-    public string[] lines;
+    public string[] armasLines;
+    public string[] botasLines;
 
-    private bool hasInteracted = false;
-
-    public void Interact()
+    public void Interact(string objeto)
     {
-        if (hasInteracted) return;
-
-        hasInteracted = true;
-        PolicialTalk.Instance.StartDialogue(lines);
-        TextManager.Instance.StartDialogue(lines);
+        if (objeto == "arma")
+        {
+            PolicialTalk.Instance.StartDialogue(armasLines);
+        }
+        if (objeto == "botas")
+        {
+             PolicialTalk.Instance.StartDialogue(botasLines);
+        }
 
     }
 }

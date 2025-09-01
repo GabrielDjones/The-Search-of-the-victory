@@ -13,6 +13,6 @@ public class DialogueSangue : MonoBehaviour
 
         hasInteracted = true;
         PolicialTalk.Instance.StartDialogue(lines);
-        TextManager.Instance.StartDialogue(lines);
+      
     }
 }
