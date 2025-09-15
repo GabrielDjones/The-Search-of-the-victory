@@ -4,7 +4,6 @@ using System.Collections;
 
 public class PolicialTalk : MonoBehaviour
 {
-    GameManager gameManager;
 
     public static PolicialTalk Instance;
 
@@ -19,7 +18,7 @@ public class PolicialTalk : MonoBehaviour
     public bool isTyping;
     private void Start()
     {
-        gameManager = FindAnyObjectByType(typeof(GameManager)) as GameManager;
+    
     }
     void Awake()
     {
@@ -32,13 +31,13 @@ public class PolicialTalk : MonoBehaviour
 
     void Update()
     {
-        gameManager.Typing(isTyping);
+        
         if (dialogueBox.activeSelf && dialogueBox2 && Input.GetKeyDown(KeyCode.E))
         {
            
             if (isTyping)
             {
-                StopAllCoroutines();
+                StopAllCoroutines();    
                 dialogueText.text = lines[currentLine];
                 dialogueText2.text = lines[currentLine];
                 isTyping = false;

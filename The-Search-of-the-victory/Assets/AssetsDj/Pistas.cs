@@ -5,10 +5,9 @@ using UnityEngine.SceneManagement;
 
 public class Pistas : MonoBehaviour
 {
-    DialogueTrigger dialogueTrigger;
+  
     DialogueArma gunTrigger;
-    DialogueSangue sangueTrigger;
-    DialogueSecador secadorTrigger;
+
 
     [SerializeField] UnityEvent entregarPistas;
     bool gunInterect;
@@ -20,10 +19,7 @@ public class Pistas : MonoBehaviour
     
     void Start()
     {
-      dialogueTrigger = FindAnyObjectByType(typeof(DialogueTrigger)) as DialogueTrigger;
-      secadorTrigger = FindAnyObjectByType(typeof(DialogueSecador)) as DialogueSecador;
       gunTrigger = FindAnyObjectByType(typeof(DialogueArma)) as DialogueArma;
-      sangueTrigger = FindAnyObjectByType(typeof (DialogueSangue))as DialogueSangue;
     }
 
     // Update is called once per frame
@@ -57,7 +53,7 @@ public class Pistas : MonoBehaviour
         if (!sangueInterect)
         {
           sangueInterect = true;
-          sangueTrigger.Interact();
+          gunTrigger.Interact("sangue");
           hints++;
         }
     }
@@ -66,14 +62,14 @@ public class Pistas : MonoBehaviour
         if (!secadorInterect)
         {
             secadorInterect = true;
-            secadorTrigger.Interact();
+            gunTrigger.Interact("secador");
             hints++;
         }
        
     }
     public void SaidaFalsa()
     {
-         dialogueTrigger.Interact();    
+         gunTrigger.Interact("saida");    
     }
     public void SceneSwitcher(string sceneName)
     {
