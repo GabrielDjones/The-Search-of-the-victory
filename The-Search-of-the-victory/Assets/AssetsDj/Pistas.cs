@@ -25,7 +25,7 @@ public class Pistas : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(hints >= 3)
+        if(hints >= 4)
         {
             entregarPistas.Invoke();
         }
@@ -41,11 +41,12 @@ public class Pistas : MonoBehaviour
     }
     public void Botas()
     {
-        if (botasInterect)
+        if (!botasInterect)
         {
             botasInterect = true;
             gunTrigger.Interact("botas");
             hints++;
+         
         }
     }
     public void Sangue()

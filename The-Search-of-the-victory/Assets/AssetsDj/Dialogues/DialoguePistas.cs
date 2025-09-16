@@ -19,12 +19,12 @@ public class DialoguePistas : MonoBehaviour
        
         if (times == 0)
         {
-            PolicialTalk.Instance.StartDialogue(linesAcerto);
+            TextManager.Instance.StartDialogue(linesAcerto);
             times++;
         }
         else if (times == 1)
         {
-            PolicialTalk.Instance.StartDialogue(lines2Acerto);
+            TextManager.Instance.StartDialogue(lines2Acerto);
             times++;
         }
         
@@ -33,12 +33,12 @@ public class DialoguePistas : MonoBehaviour
     {
         if (times == 0)
         {
-            PolicialTalk.Instance.StartDialogue(linesErro);
+            TextManager.Instance.StartDialogue(linesErro);
             times++;
         }
         else if(times == 1)
         {
-            PolicialTalk.Instance.StartDialogue(lines2Erro);
+            TextManager.Instance.StartDialogue(lines2Erro);
         }
          
     }

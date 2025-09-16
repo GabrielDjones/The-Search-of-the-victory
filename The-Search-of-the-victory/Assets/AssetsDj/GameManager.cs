@@ -6,7 +6,7 @@ public class GameManager : MonoBehaviour
     
 
     DialogueTrigger dialogueTrigger;
-    PolicialTalk policialTalk;
+    TextManager textManager;
     public  int clicks;
 
     [SerializeField] UnityEvent TesteEvent;
@@ -21,7 +21,7 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         dialogueTrigger = FindAnyObjectByType(typeof(DialogueTrigger)) as DialogueTrigger;
-        policialTalk = FindAnyObjectByType(typeof (PolicialTalk)) as PolicialTalk;
+        textManager = FindAnyObjectByType(typeof (TextManager)) as TextManager;
     }
     void Update()
     {

@@ -21,6 +21,7 @@ public class DialogueArma : MonoBehaviour
         if (objeto == "botas")
         {
              PolicialTalk.Instance.StartDialogue(botasLines);
+         
         }
         if(objeto == "secador")
         {

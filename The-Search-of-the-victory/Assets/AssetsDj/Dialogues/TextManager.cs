@@ -9,9 +9,7 @@ public class TextManager : MonoBehaviour
     public static  TextManager Instance;
 
     public GameObject dialogueBox;
-    public GameObject dialogueBox2;
     public TextMeshProUGUI dialogueText;
-    public TextMeshProUGUI dialogueText2;
     public float typingSpeed = 0.04f;
 
     private string[] lines;
@@ -27,20 +25,18 @@ public class TextManager : MonoBehaviour
         else Destroy(gameObject);
 
         dialogueBox.SetActive(false);
-        dialogueBox2.SetActive(false);
     }
 
     void Update()
     {
         gameManager.Typing(isTyping);
-        if (dialogueBox.activeSelf && dialogueBox2 && Input.GetKeyDown(KeyCode.E))
+        if (dialogueBox.activeSelf && Input.GetKeyDown(KeyCode.E))
         {
 
             if (isTyping)
             {
                 StopAllCoroutines();
                 dialogueText.text = lines[currentLine];
-                dialogueText2.text = lines[currentLine];
                 isTyping = false;
             }
             else
@@ -53,7 +49,6 @@ public class TextManager : MonoBehaviour
                 else
                 {
                     dialogueBox.SetActive(false);
-                    dialogueBox2.SetActive(false);
                 }
             }
         }
@@ -65,20 +60,17 @@ public class TextManager : MonoBehaviour
         lines = dialogueLines;
         currentLine = 0;
         dialogueBox.SetActive(true);
-        dialogueBox2.SetActive(true);
         StartCoroutine(TypeLine(lines[currentLine]));
     }
 
     IEnumerator TypeLine(string line)
     {
         dialogueText.text = "";
-        dialogueText2.text = "";
         isTyping = true;
 
         foreach (char c in line)
         {
             dialogueText.text += c;
-            dialogueText2.text += c;
             yield return new WaitForSeconds(typingSpeed);
         }
 
