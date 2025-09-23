@@ -2,8 +2,8 @@ using UnityEngine;
 using System.Collections;
 using TMPro;
 public class TextManager : MonoBehaviour
-{ 
-
+{
+    CafeteriaManager cafe;
     GameManager gameManager;
 
     public static  TextManager Instance;
@@ -17,7 +17,11 @@ public class TextManager : MonoBehaviour
     public bool isTyping;
     private void Start()
     {
-        gameManager = FindAnyObjectByType(typeof(GameManager)) as GameManager;
+        if (gameManager != null)
+        {
+            gameManager = FindAnyObjectByType(typeof(GameManager)) as GameManager;
+        }
+        
     }
     void Awake()
     {
@@ -29,7 +33,11 @@ public class TextManager : MonoBehaviour
 
     void Update()
     {
-        gameManager.Typing(isTyping);
+        if (gameManager != null)
+        {
+            gameManager.Typing(isTyping);
+        }
+       
         if (dialogueBox.activeSelf && Input.GetKeyDown(KeyCode.E))
         {
 
