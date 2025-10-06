@@ -5,7 +5,7 @@ public class GameManager : MonoBehaviour
 {
     
 
-    DialogueTrigger dialogueTrigger;
+    DialogueTrigger2 dialogueTrigger;
     TextManager textManager;
     public  int clicks;
 
@@ -20,7 +20,7 @@ public class GameManager : MonoBehaviour
     bool clicking;
     void Start()
     {
-        dialogueTrigger = FindAnyObjectByType(typeof(DialogueTrigger)) as DialogueTrigger;
+        dialogueTrigger = FindAnyObjectByType(typeof(DialogueTrigger2)) as DialogueTrigger2;
         textManager = FindAnyObjectByType(typeof (TextManager)) as TextManager;
     }
     void Update()

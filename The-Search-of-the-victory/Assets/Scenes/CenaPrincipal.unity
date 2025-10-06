@@ -788,19 +788,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 478331956}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8e254d073cf8a1248b418c02b37872c7, type: 3}
+  m_Script: {fileID: 11500000, guid: 8a5f8905e6ef1bd4abdd7c84a1916c31, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Lines:
-  - 'placeholder
-
-'
-  - 'placeholder
-
-'
-  - 'placeholder
-
-'
+  - placeholder
+  - placeholder
+  - placeholder
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
