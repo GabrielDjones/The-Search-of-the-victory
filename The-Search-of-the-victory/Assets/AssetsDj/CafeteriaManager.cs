@@ -43,7 +43,6 @@ public class CafeteriaManager : MonoBehaviour
         {
             player.SetActive(true);
             sceneSwitch.Invoke();
-            Debug.Log("start");
         }
     }
 
