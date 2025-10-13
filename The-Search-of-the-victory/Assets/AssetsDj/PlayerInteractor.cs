@@ -2,11 +2,13 @@ using UnityEngine;
 
 public class PlayerInteractor : MonoBehaviour
 {
-  
-  
+
+    [SerializeField] private Transform positionToRespawn;
     public Transform interactionPoint;
     public float interactionRadius = 0.5f;
     public LayerMask interactableLayer;
+
+    public GameObject player;
 
     void Update()
     {
@@ -21,9 +23,13 @@ public class PlayerInteractor : MonoBehaviour
                     trigger.Interact();
                 }
             }
+            if (hit != null && hit.CompareTag("Teleporter"))
+            {
+                if (positionToRespawn != null) gameObject.transform.position = positionToRespawn.position; player.SetActive(false);
+            }
         }
     }
-
+  
     void OnDrawGizmosSelected()
     {
         if (interactionPoint != null)

@@ -34,7 +34,7 @@ public class CafeteriaManager : MonoBehaviour
             clicks++;
         }
 
-        if (clicks == 15)
+        if (clicks == 14)
         {
             ended = true;
         }
@@ -57,15 +57,15 @@ public class CafeteriaManager : MonoBehaviour
 
         if (clicks == 5) CharName.text = "Maia";
 
-        if (clicks == 8) CharName.text = "Diego";
+        if (clicks == 7) CharName.text = "Diego";
 
-        if (clicks == 9) CharName.text = "Isaac";
+        if (clicks == 8) CharName.text = "Isaac";
 
-        if (clicks == 12) CharName.text = "Diego";
+        if (clicks == 11) CharName.text = "Diego";
 
-        if (clicks == 13) CharName.text = "Isaac";
+        if (clicks == 12) CharName.text = "Isaac";
 
-        if (clicks == 14) CharName.text = "Maia";
+        if (clicks == 13) CharName.text = "Maia";
 
     }
 }
