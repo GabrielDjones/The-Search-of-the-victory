@@ -826,22 +826,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Lines:
-  - placeholder
-  - placeholder
-  - placeholder
-  - placeholder
-  - placeholder
-  - placeholder
-  - placeholder
-  - placeholder
-  - placeholder
-  - placeholder
-  - placeholder
-  - placeholder
-  - placeholder
-  - placeholder
-  - placeholder
-  - placeholder
+  - "-  Finalmente terminei o \xFAltimo semestre de advocacia, n\xE3o vejo a hora
+    de chegar em casa... -"
+  - "- Ali\xE1s, antes de eu ir para casa tenho que lembrar de passar na minha sobrinha
+    pra devolver a c\xE2mera polaroid dela. -"
+  - '- Mas depois de fazer isso, vou capotar na cama. -'
+  - "Diego, voc\xEA viu o que t\xE3o falando que rolou com aquela mulher e o marido
+    dela? "
+  - "Acho que \xE9 Maria da Penha o nome dela, alguma coisa assim\u2026"
+  - "- Maria da Penha? Acho que essa \xE9 aquela amiga da minha m\xE3e que cuidava
+    de mim quando eu era menor; -"
+  - "- O que ser\xE1 que aconteceu com ela..? -"
+  - "U\xE9, n\xE3o, que que rolou? "
+  - "Acho que uns quatro meses atr\xE1s o marido dela atirou nela enquanto ela dormia; "
+  - " Depois que ela voltou do hospital, ele deixou ela em c\xE1rcere privado e tentou
+    matar ela eletrocutada na banheira;"
+  - " Acho que ela at\xE9 t\xE1 atr\xE1s de um advogado agora, ouvi que o julgamento
+    do cara vai ser amanh\xE3."
+  - "\u2026"
+  - "Pois \xE9, mano..."
+  - "Meu deus, eu preciso ajudar ela urgentemente, vou ligar pra minha m\xE3e perguntando
+    em qual hospital ela t\xE1.\r\n"
 --- !u!114 &701686260
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1916,8 +1921,8 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1641975645}
-  - {fileID: 701686261}
   - {fileID: 531032317}
+  - {fileID: 701686261}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1660057539 &9223372036854775807
