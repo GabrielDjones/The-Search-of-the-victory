@@ -276,7 +276,6 @@ MonoBehaviour:
   m_ScreenCoordScaleBias: {x: 0, y: 0, z: 0, w: 0}
   m_RequiresDepthTexture: 0
   m_RequiresColorTexture: 0
-  m_Version: 2
   m_TaaSettings:
     m_Quality: 3
     m_FrameInfluence: 0.1
@@ -284,6 +283,7 @@ MonoBehaviour:
     m_MipBias: 0
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
+  m_Version: 2
 --- !u!20 &83249896
 Camera:
   m_ObjectHideFlags: 0
@@ -378,7 +378,7 @@ GameObject:
   - component: {fileID: 139784051}
   - component: {fileID: 139784054}
   m_Layer: 0
-  m_Name: Main Camera
+  m_Name: MainCamera
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -495,7 +495,6 @@ MonoBehaviour:
   m_ScreenCoordScaleBias: {x: 0, y: 0, z: 0, w: 0}
   m_RequiresDepthTexture: 0
   m_RequiresColorTexture: 0
-  m_Version: 2
   m_TaaSettings:
     m_Quality: 3
     m_FrameInfluence: 0.1
@@ -503,6 +502,7 @@ MonoBehaviour:
     m_MipBias: 0
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
+  m_Version: 2
 --- !u!1 &397254219
 GameObject:
   m_ObjectHideFlags: 0
@@ -847,6 +847,7 @@ MonoBehaviour:
   - "Pois \xE9, mano..."
   - "Meu deus, eu preciso ajudar ela urgentemente, vou ligar pra minha m\xE3e perguntando
     em qual hospital ela t\xE1.\r\n"
+  Lines2: []
 --- !u!114 &701686260
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1236,6 +1237,8 @@ SpriteRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -1257,6 +1260,7 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
@@ -1320,16 +1324,140 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4841777087403030649, guid: 93e318a1dc688b6469c2df7674a55d39, type: 3}
+      propertyPath: cam
+      value: 
+      objectReference: {fileID: 139784050}
+    - target: {fileID: 4841777087403030649, guid: 93e318a1dc688b6469c2df7674a55d39, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 897718756}
+    - target: {fileID: 4841777087403030649, guid: 93e318a1dc688b6469c2df7674a55d39, type: 3}
       propertyPath: positionToRespawn
       value: 
       objectReference: {fileID: 1560149055}
+    - target: {fileID: 4841777087403030649, guid: 93e318a1dc688b6469c2df7674a55d39, type: 3}
+      propertyPath: positionToTeleport
+      value: 
+      objectReference: {fileID: 1560149055}
+    - target: {fileID: 4841777087403030649, guid: 93e318a1dc688b6469c2df7674a55d39, type: 3}
+      propertyPath: sceneSwitch.m_PersistentCalls.m_Calls.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4841777087403030649, guid: 93e318a1dc688b6469c2df7674a55d39, type: 3}
+      propertyPath: cameraSwitch.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4841777087403030649, guid: 93e318a1dc688b6469c2df7674a55d39, type: 3}
+      propertyPath: sceneSwitch.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4841777087403030649, guid: 93e318a1dc688b6469c2df7674a55d39, type: 3}
+      propertyPath: sceneSwitch.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4841777087403030649, guid: 93e318a1dc688b6469c2df7674a55d39, type: 3}
+      propertyPath: cameraSwitch.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4841777087403030649, guid: 93e318a1dc688b6469c2df7674a55d39, type: 3}
+      propertyPath: cameraSwitch.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4841777087403030649, guid: 93e318a1dc688b6469c2df7674a55d39, type: 3}
+      propertyPath: sceneSwitch.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 139784050}
+    - target: {fileID: 4841777087403030649, guid: 93e318a1dc688b6469c2df7674a55d39, type: 3}
+      propertyPath: sceneSwitch.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 83249893}
+    - target: {fileID: 4841777087403030649, guid: 93e318a1dc688b6469c2df7674a55d39, type: 3}
+      propertyPath: cameraSwitch.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 83249893}
+    - target: {fileID: 4841777087403030649, guid: 93e318a1dc688b6469c2df7674a55d39, type: 3}
+      propertyPath: cameraSwitch.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 139784050}
+    - target: {fileID: 4841777087403030649, guid: 93e318a1dc688b6469c2df7674a55d39, type: 3}
+      propertyPath: sceneSwitch.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4841777087403030649, guid: 93e318a1dc688b6469c2df7674a55d39, type: 3}
+      propertyPath: sceneSwitch.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4841777087403030649, guid: 93e318a1dc688b6469c2df7674a55d39, type: 3}
+      propertyPath: cameraSwitch.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4841777087403030649, guid: 93e318a1dc688b6469c2df7674a55d39, type: 3}
+      propertyPath: cameraSwitch.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4841777087403030649, guid: 93e318a1dc688b6469c2df7674a55d39, type: 3}
+      propertyPath: sceneSwitch.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SetActive
+      objectReference: {fileID: 0}
+    - target: {fileID: 4841777087403030649, guid: 93e318a1dc688b6469c2df7674a55d39, type: 3}
+      propertyPath: sceneSwitch.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: SetActive
+      objectReference: {fileID: 0}
+    - target: {fileID: 4841777087403030649, guid: 93e318a1dc688b6469c2df7674a55d39, type: 3}
+      propertyPath: cameraSwitch.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SetActive
+      objectReference: {fileID: 0}
+    - target: {fileID: 4841777087403030649, guid: 93e318a1dc688b6469c2df7674a55d39, type: 3}
+      propertyPath: cameraSwitch.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: SetActive
+      objectReference: {fileID: 0}
+    - target: {fileID: 4841777087403030649, guid: 93e318a1dc688b6469c2df7674a55d39, type: 3}
+      propertyPath: sceneSwitch.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: UnityEngine.GameObject, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 4841777087403030649, guid: 93e318a1dc688b6469c2df7674a55d39, type: 3}
+      propertyPath: sceneSwitch.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: UnityEngine.GameObject, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 4841777087403030649, guid: 93e318a1dc688b6469c2df7674a55d39, type: 3}
+      propertyPath: cameraSwitch.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: UnityEngine.GameObject, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 4841777087403030649, guid: 93e318a1dc688b6469c2df7674a55d39, type: 3}
+      propertyPath: cameraSwitch.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: UnityEngine.GameObject, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 4841777087403030649, guid: 93e318a1dc688b6469c2df7674a55d39, type: 3}
+      propertyPath: sceneSwitch.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_BoolArgument
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4841777087403030649, guid: 93e318a1dc688b6469c2df7674a55d39, type: 3}
+      propertyPath: cameraSwitch.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_BoolArgument
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4841777087403030649, guid: 93e318a1dc688b6469c2df7674a55d39, type: 3}
+      propertyPath: sceneSwitch.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 4841777087403030649, guid: 93e318a1dc688b6469c2df7674a55d39, type: 3}
+      propertyPath: sceneSwitch.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 4841777087403030649, guid: 93e318a1dc688b6469c2df7674a55d39, type: 3}
+      propertyPath: cameraSwitch.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 4841777087403030649, guid: 93e318a1dc688b6469c2df7674a55d39, type: 3}
+      propertyPath: cameraSwitch.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 8937092631763380360, guid: 93e318a1dc688b6469c2df7674a55d39, type: 3}
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 8937092631763380360, guid: 93e318a1dc688b6469c2df7674a55d39, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8937092631763380360, guid: 93e318a1dc688b6469c2df7674a55d39, type: 3}
       propertyPath: m_TagString
@@ -1474,6 +1602,8 @@ SpriteRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -1495,6 +1625,7 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
@@ -1534,7 +1665,7 @@ Transform:
   m_GameObject: {fileID: 1560149054}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 46.129997, y: -6.6800003, z: 0}
+  m_LocalPosition: {x: 43.3, y: -5.2, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1713,6 +1844,8 @@ SpriteRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -1734,6 +1867,7 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
@@ -1847,6 +1981,8 @@ SpriteRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -1868,6 +2004,7 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0

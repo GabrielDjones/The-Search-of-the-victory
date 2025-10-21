@@ -1,12 +1,13 @@
 using UnityEngine;
 using System.Collections;
 using TMPro;
+
 public class TextManager : MonoBehaviour
 {
     public CafeteriaManager cafe;
     GameManager gameManager;
 
-    public static  TextManager Instance;
+    public static TextManager Instance;
 
     public GameObject dialogueBox;
     public TextMeshProUGUI dialogueText;
@@ -15,10 +16,14 @@ public class TextManager : MonoBehaviour
     private string[] lines;
     private int currentLine;
     public bool isTyping;
+
     private void Start()
     {
-        if (gameManager != null) gameManager = FindAnyObjectByType(typeof(GameManager)) as GameManager;  
+
+        if (gameManager == null)
+            gameManager = FindAnyObjectByType(typeof(GameManager)) as GameManager;
     }
+
     void Awake()
     {
         if (Instance == null) Instance = this;
@@ -29,12 +34,11 @@ public class TextManager : MonoBehaviour
 
     void Update()
     {
-        if(cafe != null) cafe.SkipText(isTyping);
-        if (gameManager != null)  gameManager.Typing(isTyping);
- 
+        if (cafe != null) cafe.SkipText(isTyping);
+        if (gameManager != null) gameManager.Typing(isTyping);
+
         if (dialogueBox.activeSelf && Input.GetKeyDown(KeyCode.E))
         {
-
             if (isTyping)
             {
                 StopAllCoroutines();
@@ -44,7 +48,7 @@ public class TextManager : MonoBehaviour
             else
             {
                 currentLine++;
-                if (currentLine < lines.Length)
+                if (lines != null && currentLine < lines.Length)
                 {
                     StartCoroutine(TypeLine(lines[currentLine]));
                 }
@@ -54,15 +58,26 @@ public class TextManager : MonoBehaviour
                 }
             }
         }
-
     }
 
     public void StartDialogue(string[] dialogueLines)
     {
+  
+        if (dialogueLines == null || dialogueLines.Length == 0)
+        {
+            Debug.Log("StartDialogue foi chamado com um array vazio ou nulo!");
+            return;
+        }
+
         lines = dialogueLines;
         currentLine = 0;
         dialogueBox.SetActive(true);
-        StartCoroutine(TypeLine(lines[currentLine]));
+
+       
+        if (currentLine < lines.Length)
+            StartCoroutine(TypeLine(lines[currentLine]));
+        else
+            Debug.Log("Nenhuma linha para exibir no diálogo!");
     }
 
     IEnumerator TypeLine(string line)

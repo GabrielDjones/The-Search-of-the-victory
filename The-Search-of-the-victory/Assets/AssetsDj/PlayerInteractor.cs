@@ -1,15 +1,17 @@
 using UnityEngine;
+using UnityEngine.Events;
 
 public class PlayerInteractor : MonoBehaviour
 {
+    [SerializeField] UnityEvent cameraSwitch;
 
-    [SerializeField] private Transform positionToRespawn;
+    [SerializeField] private Transform positionToTeleport;
     public Transform interactionPoint;
     public float interactionRadius = 0.5f;
     public LayerMask interactableLayer;
 
-    public GameObject player;
-
+    public GameObject cam;
+    
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.E))
@@ -25,7 +27,12 @@ public class PlayerInteractor : MonoBehaviour
             }
             if (hit != null && hit.CompareTag("Teleporter"))
             {
-                if (positionToRespawn != null) gameObject.transform.position = positionToRespawn.position; player.SetActive(false);
+                if (positionToTeleport != null)
+                {
+                    cameraSwitch.Invoke();
+                    gameObject.transform.position = positionToTeleport.position;
+                    cam.transform.position = positionToTeleport.position;
+                }
             }
         }
     }
