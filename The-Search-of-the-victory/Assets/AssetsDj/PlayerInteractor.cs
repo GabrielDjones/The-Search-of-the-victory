@@ -10,8 +10,18 @@ public class PlayerInteractor : MonoBehaviour
     public float interactionRadius = 0.5f;
     public LayerMask interactableLayer;
 
+    DialogueTrigger dialogue;
+
+    CafeteriaManager cafe;
+
     public GameObject cam;
-    
+
+    private void Start()
+    {
+        cafe = FindAnyObjectByType(typeof (CafeteriaManager)) as CafeteriaManager;
+        dialogue = FindAnyObjectByType(typeof(DialogueTrigger)) as DialogueTrigger;
+    }
+
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.E))
@@ -30,7 +40,9 @@ public class PlayerInteractor : MonoBehaviour
                 if (positionToTeleport != null)
                 {
                     cameraSwitch.Invoke();
-                    gameObject.transform.position = positionToTeleport.position;
+                    gameObject.SetActive(false);
+                    dialogue.InteractHospital();
+                    cafe.hospital();
                     cam.transform.position = positionToTeleport.position;
                 }
             }

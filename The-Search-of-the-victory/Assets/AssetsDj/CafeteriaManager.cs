@@ -8,13 +8,17 @@ public class CafeteriaManager : MonoBehaviour
     DialogueTrigger dialogue;
     TextManager textManager;
 
+    [SerializeField] Transform positionToTeleport;
+
     [SerializeField] GameObject player;
 
     [SerializeField] UnityEvent sceneSwitch;
+    [SerializeField] UnityEvent sceneSwitch2;
 
     bool clicking;
     public int clicks;
     bool ended = false;
+ 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -43,14 +47,25 @@ public class CafeteriaManager : MonoBehaviour
         {
             player.SetActive(true);
             sceneSwitch.Invoke();
-            ended = false;
             clicks = 20;
+        }
+
+        if (clicks == 30)
+        {
+            player.SetActive(true);
+            player.transform.position = positionToTeleport.position;
+            sceneSwitch2.Invoke();
         }
     }
 
     public void SkipText(bool x)
     {
        clicking = x;
+    }
+
+    public void hospital()
+    {
+        ended = false;
     }
 
     private void NameManager()
