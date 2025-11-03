@@ -48,6 +48,7 @@ public class CafeteriaManager : MonoBehaviour
             player.SetActive(true);
             sceneSwitch.Invoke();
             clicks = 20;
+            Debug.Log("hospital");
         }
 
         if (clicks == 30)
@@ -55,6 +56,7 @@ public class CafeteriaManager : MonoBehaviour
             player.SetActive(true);
             player.transform.position = positionToTeleport.position;
             sceneSwitch2.Invoke();
+            Debug.Log("polical");
         }
     }
 
