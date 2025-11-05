@@ -9,11 +9,13 @@ public class CafeteriaManager : MonoBehaviour
     TextManager textManager;
 
     [SerializeField] Transform positionToTeleport;
+    [SerializeField] Transform positionToTeleportCamera;
 
     [SerializeField] GameObject player;
+    [SerializeField] GameObject Cam;
 
     [SerializeField] UnityEvent sceneSwitch;
-    [SerializeField] UnityEvent sceneSwitch2;
+   
 
     bool clicking;
     public int clicks;
@@ -44,18 +46,19 @@ public class CafeteriaManager : MonoBehaviour
         }
 
         if (ended == true)
-        {
+        { 
             player.SetActive(true);
             sceneSwitch.Invoke();
             clicks = 20;
             Debug.Log("hospital");
         }
 
-        if (clicks == 30)
+        if (clicks == 32)
         {
             player.SetActive(true);
             player.transform.position = positionToTeleport.position;
-            sceneSwitch2.Invoke();
+            Cam.transform.position = positionToTeleportCamera.position; 
+            ended = false;
             Debug.Log("polical");
         }
     }
@@ -85,6 +88,14 @@ public class CafeteriaManager : MonoBehaviour
         if (clicks == 12) CharName.text = "Isaac";
 
         if (clicks == 13) CharName.text = "Maia";
-
+        //---------------------------------------//
+        if (clicks == 21) CharName.text = "Maria da Penha";
+        if (clicks == 22) CharName.text = "Maia";
+        if (clicks == 25) CharName.text = "Maria da Penha";
+        if (clicks == 27) CharName.text = "Maia";
+        if (clicks == 28) CharName.text = "Maria da Penha";
+        if (clicks == 29) CharName.text = "Maia";
+        if (clicks == 30) CharName.text = "Maria da Penha";
+        if (clicks == 31) CharName.text = "Maia";
     }
 }

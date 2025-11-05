@@ -1,3 +1,5 @@
+using NUnit.Framework;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -9,6 +11,7 @@ public class PlayerInteractor : MonoBehaviour
     public Transform interactionPoint;
     public float interactionRadius = 0.5f;
     public LayerMask interactableLayer;
+
 
     DialogueTrigger dialogue;
 
@@ -27,18 +30,15 @@ public class PlayerInteractor : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.E))
         {
             Collider2D hit = Physics2D.OverlapCircle(interactionPoint.position, interactionRadius, interactableLayer);
-            if (hit != null)
+5           if (hit != null && hit.CompareTag("policial"))
             {
-                DialogueTrigger trigger = hit.GetComponent<DialogueTrigger>();
-                if (trigger != null)
-                {
-                    trigger.Interact();
-                }
+                dialogue.InteractPolicial();
+                Debug.Log("conversa com policial");
             }
             if (hit != null && hit.CompareTag("Teleporter"))
             {
                 if (positionToTeleport != null)
-                {
+                {   
                     cameraSwitch.Invoke();
                     gameObject.SetActive(false);
                     dialogue.InteractHospital();
@@ -46,6 +46,7 @@ public class PlayerInteractor : MonoBehaviour
                     cam.transform.position = positionToTeleport.position;
                 }
             }
+
         }
     }
   

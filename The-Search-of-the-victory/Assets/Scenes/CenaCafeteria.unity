@@ -423,7 +423,7 @@ Camera:
     y: 0
     width: 1
     height: 1
-  near clip plane: 0.3
+  near clip plane: -0.21
   far clip plane: 1000
   field of view: 60
   orthographic: 1
@@ -1039,12 +1039,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 507871761}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 188, y: -0.5, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 86.13, y: -4.58, z: 0.32551613}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1186829450}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &531032314
 GameObject:
@@ -1392,16 +1392,55 @@ MonoBehaviour:
   - "Meu deus, eu preciso ajudar ela urgentemente, vou ligar pra minha m\xE3e perguntando
     em qual hospital ela t\xE1.\r\n"
   Lines2:
-  - placeHolder
-  - placeHolder
-  - placeHolder
-  - placeHolder
-  - placeHolder
-  - placeHolder
-  - placeHolder
-  - placeHolder
-  - placeHolder
-  - placeHolder
+  - 'Oi Maria..
+
+'
+  - "Maia? Oque que voc\xEA t\xE1 fazendo aqui? Voc\xEA t\xE1 t\xE3o crescidinha.."
+  - "Eu tenho 29 anos, Maria\u2026"
+  - "Mas eu vim aqui porque fiquei sabendo do que aconteceu com voc\xEA"
+  - "Ouvi que voc\xEA tava \xE0 procura de um advogado e acabei de me formar em advocacia,
+    ent\xE3o\u2026\r\n"
+  - "Voc\xEA se formou em advocacia?? Parab\xE9ns!.. "
+  - "Mas voc\xEA tem certeza sobre isso? Eu n\xE3o sei se vou conseguir te recompensar
+    muito bem pelo seu trabalho\u2026\r\n"
+  - "Fica tranquila sobre isso, leva em considera\xE7\xE3o como se fosse uma recompensa
+    pra voc\xEA por ter cuidado tanto de mim quando eu era menor.\r\n"
+  - Ah, muito obrigada Maia.
+  - "Mas eu preciso que voc\xEA me passe o seu endere\xE7o para eu poder ir na cena
+    do crime pra dar uma olhada e coletar informa\xE7\xF5es\u2026\r\n"
+  - " Sem problemas, querida, eu moro na rua XXX. XXXX XXXX, n\xFAmero XXX..\r\n\r\n"
+  - ' Obrigada, Maria, eu prometo que vou te ajudar.
+
+    
+
+'
+  lines3:
+  - "Oi, meu nome \xE9 Maia- "
+  - "O que voc\xEA est\xE1 fazendo aqui? \xC9 uma cena do crime, n\xE3o t\xE1 vendo?
+    Cai fora.\r\n"
+  - "Uhh\u2026\r\n"
+  - "\u2026 \r\n"
+  - "ent\xE3o, \xE9 que meio que eu sou a advogada da v\xEDtima, a Maria da Penha\u2026\r\n"
+  - 'Eu queria saber se tem como eu entrar ai pra dar uma olhada.
+
+    
+
+'
+  - "Ahh voc\xEA \xE9 a advogada! Desculpa pela grosseria, estou espantando jornalistas
+    o dia inteiro, meu nome \xE9 Klaus.\r\n\r\n"
+  - "sem problemas, s\xF3 queria realmente saber se tem como eu dar uma olhada ai,
+    estou com um tempo pequeno.\r\n\r\n"
+  - "N\xE3o sei se tem como voc\xEA entrar aqui, mas acho que posso tirar foto de
+    algumas pistas e dar pra voc\xEA.\r\n\r\n"
+  - "Isso seria \xF3timo!\r\n\r\n\r\n"
+  - "S\xF3 tem um pequeno problema, n\xE3o tenho nenhuma c\xE2mera pra tirar as fotos\u2026\r\n\r\n\r\n"
+  - "Eu posso te dar a c\xE2mera da minha sobrinha, ela tinha me emprestado, acho
+    que ela n\xE3o vai se importar se eu usa-la.\r\n\r\n"
+  - 'ok, estarei de volta em alguns minutos.
+
+    
+
+'
 --- !u!114 &701686260
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2047,6 +2086,8 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1560149055}
+  - {fileID: 1907872413}
+  - {fileID: 507871762}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1208378912
@@ -2797,7 +2838,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CharName: {fileID: 397254221}
   positionToTeleport: {fileID: 507871762}
+  positionToTeleportCamera: {fileID: 1907872413}
   player: {fileID: 897718756}
+  Cam: {fileID: 139784050}
   sceneSwitch:
     m_PersistentCalls:
       m_Calls:
@@ -2814,33 +2857,6 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 83249893}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-  sceneSwitch2:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 139784050}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 504011544}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
@@ -3228,6 +3244,37 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c23b3f21ef01ef543b3b8cc664ffc88b, type: 3}
+--- !u!1 &1907872412
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1907872413}
+  m_Layer: 0
+  m_Name: teleporterCamera
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1907872413
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1907872412}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 92.74282, y: -4.18, z: 0.32551613}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1186829450}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2082683760
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3361,7 +3408,6 @@ SceneRoots:
   - {fileID: 2117867958}
   - {fileID: 938529034}
   - {fileID: 1186829450}
-  - {fileID: 507871762}
   - {fileID: 840567624}
   - {fileID: 1618431757}
   - {fileID: 1631398955}
