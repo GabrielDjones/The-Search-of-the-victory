@@ -335,15 +335,84 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DialogueTrigger2
   Lines:
-  - dasfsdgbsa
+  - Eai, conseguiu?
+  - Sim, tirei foto de todas as pistas importantes, espero que ajude.
+  - Muito obrigada!
   Lines2:
-  - gncvmnhjkm
+  - "Oii! Meu nome \xE9 Maia, eu queria saber se voc\xEA sabe algo sobre o que aconteceu
+    com a Maria da Penha alguns dias atr\xE1s"
+  - "Ol\xE1! Meu nome \xE9 Ycaro. Bom, a \xFAnica coisa que sei sobre o caso \xE9
+    que o marido dela deu um tiro nas costas da Maria enquanto ela dormia. Um absurdo,
+    n\xE9?"
+  - "Nossa, que  covarde\u2026 Voc\xEA tem mais alguma informa\xE7\xE3o que seja
+    importante sobre?\r\n"
+  - "Infelizmente n\xE3o possuo mais nenhuma informa\xE7\xE3o por agora, mas acho
+    que uma pessoa na rua aqui do lado tem."
+  - 'Agora tenho que ir, Adeus!
+
+'
   Lines3:
-  - oijl.jklj
+  - "Oii, com licen\xE7a, meu nome \xE9 Maia, eu queria saber se voc\xEA sabe algo
+    sobre o que aconteceu com a Maria da Penha alguns dias atr\xE1s"
+  - "\u2026"
+  - "Ah\u2026 Oi, uhh\u2026eu sei algumas coisas que a minha esposa me contou, acho
+    que posso falar se voc\xEA quiser\u2026"
+  - "Sim! Qualquer informa\xE7\xE3o \xE9 bem-vinda sr.. ?"
+  - "Ah, perd\xE3o, meu nome \xE9 Luka."
+  - "Ok, sr Luka, o que voc\xEA sabe?"
+  - "Bem, segundo a minha esposa, a Maria ficou parapl\xE9gica por causa de alguma
+    coisa que eu n\xE3o lembro\u2026 "
+  - "E dizem at\xE9 que ela ficou com traumas psicol\xF3gicos."
+  - " Isso \xE9 tudo que voc\xEA sabe?"
+  - "hm, sim, desculpa se n\xE3o pude te ajudar muito"
+  - "Sem problemas, j\xE1 ajudou muito-"
+  - "Ah, desculpa, minha esposa t\xE1 me chamando, eu preciso ir!\r\n"
+  - "Ah-... Ok, muito obrigada! \r\n"
   Lines4:
-  - 09-789
+  - "Oii, com licen\xE7a, meu nome \xE9 Maia, eu queria saber se voc\xEA sabe algo
+    sobre o que aconteceu com a Maria da Penha alguns dias atr\xE1s"
+  - 'Ello! '
+  - "Ehh sei l\xE1 eu sei algumas coisas, porque?\u2026"
+  - "Tem como voc\xEA me passar elas? Vou ser a advogada dela no tribunal amanh\xE3"
+  - "skz\u2026skz\u2026\r\n"
+  - ...
+  - oi?
+  - 'ai, desculpa eu desassociei um pouco '
+  - " Hm, Deixa eu ver, eu lembro da minha m\xE3e falando que o marido dela depois
+    daquele rolo todo falou que tudo n\xE3o se passava de um assalto"
+  - "Mentindo obviamente, mas sei l\xE1, \xE9 isso que eu sei."
+  - 'Nossa, isso vai me ajudar pra caramba, muito obrigada mesmo!
+
+'
+  - "Nossa, isso vai me ajudar pra caramba, muito obrigada mesmo, ali\xE1s seus cachorros
+    e a gatinha s\xE3o muito fofinhos."
+  - " Hooza! Eu sou incr\xEDvel.."
+  - "Muito obrigada, s\xF3 fico com pena dos cachorros sem dono, mas enfim. Boa sorte
+    no tribunal amanh\xE3 ent\xE3o eu acho, espero que n\xE3o d\xEA nenhuma neblina\u2026"
   Lines5:
-  - afvcng
+  - "han? que que voc\xEA quer"
+  - "\u2026"
+  - " \u2026oi, com licen\xE7a, meu nome \xE9 Maia, eu queria saber se voc\xEA sabe
+    algo sobre o que aconteceu com a Maria da Penha alguns dias atr\xE1s "
+  - ' han? AH, Maria da Penha, sim! acho que ouvi no jornal algo sobre enquanto eu
+    tentava dar comida pro Bernardo e o Luz.'
+  - "voc\xEA se importa de compartilhar comigo\r\n"
+  - "Ah, t\xE1 eu acho, eu tinha ouvido que quando a Maria da Penha voltou pra casa
+    depois das cirurgias e os caramba  "
+  - "Ele p\xF4s ela em c\xE1rcere privado por uns 15 dias e tentou matar ela eletrocutada
+    na banheira.\r\n"
+  - Ok, muito obrigada mesmo.
+  - "T\xE1 t\xE1 de nada, agora eu preciso leva o bernardo e o luz na escola, tchau-"
+  - 'EU SOU O LUZ!
+
+'
+  - "\u2026Uh-"
+  - ' E EU SO O BERNARDO'
+  - '..Tchau
+
+'
+  - "\u2026"
+  - ta..?
 --- !u!1 &192168183
 GameObject:
   m_ObjectHideFlags: 0
