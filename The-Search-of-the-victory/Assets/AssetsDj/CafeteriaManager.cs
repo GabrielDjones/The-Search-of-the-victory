@@ -1,12 +1,13 @@
 using TMPro;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.SceneManagement;
 
 public class CafeteriaManager : MonoBehaviour
 {
     [SerializeField] TMP_Text CharName;
     DialogueTrigger dialogue;
-    TextManager textManager;
+   
 
     [SerializeField] Transform positionToTeleport;
     [SerializeField] Transform positionToTeleportCamera;
@@ -15,23 +16,26 @@ public class CafeteriaManager : MonoBehaviour
     [SerializeField] GameObject Cam;
 
     [SerializeField] UnityEvent sceneSwitch;
-   
+
+    [SerializeField] string scene;
 
     bool clicking;
     public int clicks;
     bool ended = false;
- 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    bool first = false;
+    bool policial = false;
+
     void Start()
     {
-        textManager = FindAnyObjectByType(typeof(TextManager)) as TextManager;
         dialogue = FindAnyObjectByType(typeof(DialogueTrigger)) as DialogueTrigger;
         dialogue.Interact();
         CharName.text = "Maia";
+
     }
 
     void Update()
     {
+        WalkingCode walk = player.GetComponent<WalkingCode>();
 
         NameManager();
 
@@ -45,11 +49,12 @@ public class CafeteriaManager : MonoBehaviour
             ended = true;
         }
 
-        if (ended == true)
+        if (ended == true && first == false)
         { 
             player.SetActive(true);
             sceneSwitch.Invoke();
             clicks = 20;
+            first = true;
             Debug.Log("hospital");
         }
 
@@ -58,19 +63,33 @@ public class CafeteriaManager : MonoBehaviour
             player.SetActive(true);
             player.transform.position = positionToTeleport.position;
             Cam.transform.position = positionToTeleportCamera.position; 
-            ended = false;
+            ended = true;
             Debug.Log("polical");
+            clicks = 40;
+        }
+
+        if (policial == true) 
+        {
+            walk.enabled = false;
+            ended = false;
+            Debug.Log("parou de andar");
+        }
+
+        if(clicks == 53)
+        {
+            SceneManager.LoadScene(scene);
         }
     }
 
-    public void SkipText(bool x)
-    {
-       clicking = x;
-    }
-
+   
     public void hospital()
     {
         ended = false;
+    }
+
+    public void Policia()
+    {
+        policial = true;
     }
 
     private void NameManager()
@@ -88,14 +107,49 @@ public class CafeteriaManager : MonoBehaviour
         if (clicks == 12) CharName.text = "Isaac";
 
         if (clicks == 13) CharName.text = "Maia";
+
         //---------------------------------------//
+
         if (clicks == 21) CharName.text = "Maria da Penha";
+
         if (clicks == 22) CharName.text = "Maia";
+
         if (clicks == 25) CharName.text = "Maria da Penha";
+
         if (clicks == 27) CharName.text = "Maia";
+
         if (clicks == 28) CharName.text = "Maria da Penha";
+
         if (clicks == 29) CharName.text = "Maia";
+
         if (clicks == 30) CharName.text = "Maria da Penha";
+
         if (clicks == 31) CharName.text = "Maia";
+
+        //-------------------------------------//
+
+        if (clicks == 41) CharName.text = "policial";
+
+        if (clicks == 42) CharName.text = "Maia";
+
+        if (clicks == 44) CharName.text = "Policial";
+
+        if (clicks == 45) CharName.text = "Maia";
+
+        if (clicks == 46) CharName.text = "Klaus";
+
+        if (clicks == 47) CharName.text = "Maia";
+
+        if (clicks == 48) CharName.text = "Klaus";
+
+        if (clicks == 50) CharName.text = "Maia";
+
+        if (clicks == 52) CharName.text = "Klaus";
+
     }
+    public void SkipText(bool x)
+    {
+        clicking = x;
+    }
+
 }

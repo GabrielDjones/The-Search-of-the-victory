@@ -8,9 +8,11 @@ public class PolicialTalk : MonoBehaviour
     public static PolicialTalk Instance;
 
     public GameObject dialogueBox;
-    public GameObject dialogueBox2;
+    public GameObject dialogueBox2; 
+    public GameObject dialogueBox3;
     public TextMeshProUGUI dialogueText;
     public TextMeshProUGUI dialogueText2;
+    public TextMeshProUGUI dialogueText3;
     public float typingSpeed = 0.04f;
 
     private string[] lines;
@@ -27,6 +29,7 @@ public class PolicialTalk : MonoBehaviour
 
         dialogueBox.SetActive(false);
         dialogueBox2.SetActive(false);
+        dialogueBox3.SetActive(false);
     }
 
     void Update()
@@ -53,6 +56,7 @@ public class PolicialTalk : MonoBehaviour
                 {
                     dialogueBox.SetActive(false);
                     dialogueBox2.SetActive(false);
+                    dialogueBox3.SetActive(false);
                 }
             }
         }
@@ -65,6 +69,7 @@ public class PolicialTalk : MonoBehaviour
         currentLine = 0;
         dialogueBox.SetActive(true);
         dialogueBox2.SetActive(true);
+        dialogueBox3.SetActive(true);
         StartCoroutine(TypeLine(lines[currentLine]));
     }
 
@@ -72,12 +77,14 @@ public class PolicialTalk : MonoBehaviour
     {
         dialogueText.text = "";
         dialogueText2.text = "";
+        dialogueText3.text = "";
         isTyping = true;
 
         foreach (char c in line)
         {
             dialogueText.text += c;
             dialogueText2.text += c;
+            dialogueText3.text += c;
             yield return new WaitForSeconds(typingSpeed);
         }
 

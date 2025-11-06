@@ -5,7 +5,11 @@ TagManager:
   serializedVersion: 3
   tags:
   - Teleporter
-  - policial
+  - Policial
+  - Carac
+  - Luka
+  - Ycaro
+  - Patricia
   layers:
   - Default
   - TransparentFX
@@ -13,7 +17,7 @@ TagManager:
   - teleporter
   - Water
   - UI
-  - 
+  - policial
   - 
   - 
   - 
