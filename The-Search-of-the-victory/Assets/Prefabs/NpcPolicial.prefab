@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 782725744694303267}
   - component: {fileID: 1604026076519397053}
   - component: {fileID: 4157327575303815664}
-  - component: {fileID: 4540737038616504836}
+  - component: {fileID: 8497521840010637533}
   - component: {fileID: 7705439292208435354}
   m_Layer: 0
   m_Name: NpcPolicial
@@ -139,20 +139,33 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1.5545998, y: 1}
   m_EdgeRadius: 0
---- !u!114 &4540737038616504836
-MonoBehaviour:
+--- !u!50 &8497521840010637533
+Rigidbody2D:
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3511385215699519076}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8e254d073cf8a1248b418c02b37872c7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Lines: []
-  Lines2: []
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1000000
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!61 &7705439292208435354
 BoxCollider2D:
   m_ObjectHideFlags: 0
