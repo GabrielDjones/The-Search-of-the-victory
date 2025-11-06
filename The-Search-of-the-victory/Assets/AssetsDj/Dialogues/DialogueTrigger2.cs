@@ -12,6 +12,8 @@ public class DialogueTrigger2 : MonoBehaviour
     public string[] Lines4;
     [TextArea(2, 5)]
     public string[] Lines5;
+    [TextArea(2, 5)]
+    public string[] Lines6;
 
     bool luka = true;
     bool carac = true;
@@ -52,5 +54,9 @@ public class DialogueTrigger2 : MonoBehaviour
             TextManager.Instance.StartDialogue(Lines5);
             luka = false;
         }
+    }
+    public void Think()
+    {
+        TextManager.Instance.StartDialogue(Lines6);
     }
 }

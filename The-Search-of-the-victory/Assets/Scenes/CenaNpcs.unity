@@ -321,6 +321,7 @@ MonoBehaviour:
   dialogueBox: {fileID: 1827545854}
   dialogueText: {fileID: 1087031350}
   typingSpeed: 0.04
+  player: {fileID: 586270517}
   isTyping: 0
 --- !u!114 &70146513
 MonoBehaviour:
@@ -413,6 +414,10 @@ MonoBehaviour:
 '
   - "\u2026"
   - ta..?
+  Lines6:
+  - place holder
+  - place holder
+  - place holder
 --- !u!1 &192168183
 GameObject:
   m_ObjectHideFlags: 0

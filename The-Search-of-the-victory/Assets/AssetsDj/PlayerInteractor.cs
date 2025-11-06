@@ -118,12 +118,15 @@ public class PlayerInteractor : MonoBehaviour
 
     public void PolicialExit()
     {
+        WalkingCode walk = player.GetComponent<WalkingCode>();
         if (policialExit)
         {
+            policialExit = false;
             CameraController2D cam = Cam.GetComponent<CameraController2D>();
             player.transform.position = positionToTeleport.position;
+            walk.canMove = false;
+            dialogue.Think();
             cam.enabled = true;
-            policialExit = false;
         }
         if (!carac)
         {
@@ -143,11 +146,7 @@ public class PlayerInteractor : MonoBehaviour
         }
         else return;
     }
-    public void WalkEnablaed()
-    {
-        WalkingCode walk = player.GetComponent<WalkingCode>();
-        walk.canMove = true;
-    }
+
 
     void OnDrawGizmosSelected()
     {

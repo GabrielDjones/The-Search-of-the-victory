@@ -14,13 +14,14 @@ public class TextManager : MonoBehaviour
     public TextMeshProUGUI dialogueText;
     public float typingSpeed = 0.04f;
 
+    public GameObject player;
+
     private string[] lines;
     private int currentLine;
     public bool isTyping;
 
     private void Start()
-    {
-
+    { 
         if (gameManager == null)
             gameManager = FindAnyObjectByType(typeof(GameManager)) as GameManager;
         if (gameManager == null)
@@ -37,6 +38,7 @@ public class TextManager : MonoBehaviour
 
     void Update()
     {
+
         if (cafe != null) cafe.SkipText(isTyping);
         if (gameManager != null) gameManager.Typing(isTyping);
 
@@ -60,8 +62,14 @@ public class TextManager : MonoBehaviour
                     dialogueBox.SetActive(false);
                     if (policial != null)
                     {
-                        policial.WalkEnablaed();
+                        if (player != null)
+                        {
+                            Debug.Log("walk");
+                            WalkingCode walkcode = player.GetComponent<WalkingCode>();
+                            walkcode.canMove = true;
+                        }
                         policial.PolicialExit();
+                      
                     }
                 }
             }
