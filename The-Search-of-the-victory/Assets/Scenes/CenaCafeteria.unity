@@ -1415,32 +1415,19 @@ MonoBehaviour:
 
 '
   lines3:
-  - "Oi, meu nome \xE9 Maia- "
-  - "O que voc\xEA est\xE1 fazendo aqui? \xC9 uma cena do crime, n\xE3o t\xE1 vendo?
-    Cai fora.\r\n"
-  - "Uhh\u2026\r\n"
-  - "\u2026 \r\n"
-  - "ent\xE3o, \xE9 que meio que eu sou a advogada da v\xEDtima, a Maria da Penha\u2026\r\n"
-  - 'Eu queria saber se tem como eu entrar ai pra dar uma olhada.
-
-
-
-'
-  - "Ahh voc\xEA \xE9 a advogada! Desculpa pela grosseria, estou espantando jornalistas
-    o dia inteiro, meu nome \xE9 Klaus.\r\n\r\n"
-  - "sem problemas, s\xF3 queria realmente saber se tem como eu dar uma olhada ai,
-    estou com um tempo pequeno.\r\n\r\n"
-  - "N\xE3o sei se tem como voc\xEA entrar aqui, mas acho que posso tirar foto de
-    algumas pistas e dar pra voc\xEA.\r\n\r\n"
-  - "Isso seria \xF3timo!\r\n\r\n\r\n"
-  - "S\xF3 tem um pequeno problema, n\xE3o tenho nenhuma c\xE2mera pra tirar as fotos\u2026\r\n\r\n\r\n"
-  - "Eu posso te dar a c\xE2mera da minha sobrinha, ela tinha me emprestado, acho
-    que ela n\xE3o vai se importar se eu usa-la.\r\n\r\n"
-  - 'ok, estarei de volta em alguns minutos.
-
-
-
-'
+  - placeholder
+  - placeholder
+  - placeholder
+  - placeholder
+  - placeholder
+  - placeholder
+  - placeholder
+  - placeholder
+  - placeholder
+  - placeholder
+  - placeholder
+  - placeholder
+  - placeholder
 --- !u!114 &701686260
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2409,7 +2396,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8937092631763380360, guid: 93e318a1dc688b6469c2df7674a55d39, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8937092631763380360, guid: 93e318a1dc688b6469c2df7674a55d39, type: 3}
       propertyPath: m_TagString
@@ -2786,7 +2773,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-  scene: 
+  scene: CenaPolicial
   clicks: 0
 --- !u!4 &1641975645
 Transform:

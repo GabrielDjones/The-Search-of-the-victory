@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class GameManagerPolicial : MonoBehaviour
 {
-    GameObject player;
+    [SerializeField] GameObject player;
     DialogueTrigger2 trigger;
 
     void Start()
@@ -18,33 +18,6 @@ public class GameManagerPolicial : MonoBehaviour
     }
     public void PolicialInteract()
     {
-        WalkingCode walk = player.GetComponent<WalkingCode>();
-        trigger.Interact();
-        walk.enabled = false;
-    }
-    public void YcaroInteract()
-    {
-        WalkingCode walk = player.GetComponent<WalkingCode>();
-        trigger.Ycaro();
-        walk.enabled = false;
-    }
-    public void CaracInteract()
-    {
-        WalkingCode walk = player.GetComponent<WalkingCode>();
-        trigger.Carac();
-        walk.enabled = false;
-    }
-    public void LukaInteract()
-    {
-        WalkingCode walk = player.GetComponent<WalkingCode>();
-        trigger.Luka();
-        walk.enabled = false;
-    }
-    public void PatricioInteract()
-    {
-        WalkingCode walk = player.GetComponent<WalkingCode>();
-        trigger.Patricia();
-        walk.enabled = false;
-    }
 
+    }
 }
