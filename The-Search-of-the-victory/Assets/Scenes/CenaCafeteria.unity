@@ -1415,19 +1415,24 @@ MonoBehaviour:
 
 '
   lines3:
-  - placeholder
-  - placeholder
-  - placeholder
-  - placeholder
-  - placeholder
-  - placeholder
-  - placeholder
-  - placeholder
-  - placeholder
-  - placeholder
-  - placeholder
-  - placeholder
-  - placeholder
+  - "Oi, meu nome \xE9 Maia-.."
+  - "O que voc\xEA est\xE1 fazendo aqui? \xC9 uma cena do crime, n\xE3o t\xE1 vendo?
+    Cai fora."
+  - "Uhh\u2026"
+  - "Ent\xE3o, \xE9 que meio que eu sou a advogada da v\xEDtima, a Maria da Penha\u2026"
+  - Eu queria saber se tem como eu entrar ai pra dar uma olhada.
+  - " Ahh voc\xEA \xE9 a advogada! Desculpa pela grosseria, estou espantando jornalistas
+    o dia inteiro, meu nome \xE9 Klaus"
+  - "Sem problemas, s\xF3 realmente queria saber se tem como eu dar uma olhada ai,
+    estou com um tempo curto."
+  - "N\xE3o sei se tem como voc\xEA entrar aqui, mas acho que posso tirar foto de
+    algumas pistas e dar pra voc\xEA"
+  - "Isso seria \xF3timo!"
+  - "S\xF3 tem um pequeno problema, n\xE3o tenho nenhuma c\xE2mera pra tirar as fotos\u2026"
+  - "Puts\u2026Ah!"
+  - "Eu posso te dar a c\xE2mera da minha sobrinha, ela tinha me emprestado, acho
+    que ela n\xE3o vai se importar se eu usa-la."
+  - Ok, estarei de volta em alguns minutos.
 --- !u!114 &701686260
 MonoBehaviour:
   m_ObjectHideFlags: 0
