@@ -31,21 +31,21 @@ public class GameManager : MonoBehaviour
           clicks++;
        }
 
-       if (clicks == 3 && testeClose == true)
+       if (clicks == 10 && testeClose == true)
        {
             TesteEvent.Invoke();
             started = false;
             testeClose = false;
        }
 
-       if (clicks == 4 && pistaClose)
+       if (clicks == 12 && pistaClose)
        {
             escolhaDePistaEvent.Invoke();
             pistaClose = false;
             started = false;
        }
               
-       if(clicks == 6 && sapatoClose)
+       if(clicks == 14 && sapatoClose)
        {
             sapatoEvent.Invoke();
             sapatoClose = false;
