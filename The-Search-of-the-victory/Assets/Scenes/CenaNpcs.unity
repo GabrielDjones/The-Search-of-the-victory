@@ -282,6 +282,7 @@ GameObject:
   m_Component:
   - component: {fileID: 70146511}
   - component: {fileID: 70146512}
+  - component: {fileID: 70146513}
   m_Layer: 0
   m_Name: DialogueManager
   m_TagString: Untagged
@@ -321,6 +322,28 @@ MonoBehaviour:
   dialogueText: {fileID: 1087031350}
   typingSpeed: 0.04
   isTyping: 0
+--- !u!114 &70146513
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 70146509}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a5f8905e6ef1bd4abdd7c84a1916c31, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueTrigger2
+  Lines:
+  - dasfsdgbsa
+  Lines2:
+  - gncvmnhjkm
+  Lines3:
+  - oijl.jklj
+  Lines4:
+  - 09-789
+  Lines5:
+  - afvcng
 --- !u!1 &192168183
 GameObject:
   m_ObjectHideFlags: 0
@@ -1764,33 +1787,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &1717720551 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3511385215699519076, guid: c23b3f21ef01ef543b3b8cc664ffc88b, type: 3}
-  m_PrefabInstance: {fileID: 1486099725711707772}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1717720557
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1717720551}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8a5f8905e6ef1bd4abdd7c84a1916c31, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DialogueTrigger2
-  Lines:
-  - dvfxcb cxvb
-  Lines2:
-  - savcxb nvmbjh,ljhk
-  Lines3:
-  - hgfhfgjn bv
-  Lines4:
-  - tryhfvjnfvn
-  Lines5:
-  - cvxcvbswerhyuio
 --- !u!1 &1726681158
 GameObject:
   m_ObjectHideFlags: 0
@@ -2413,10 +2409,7 @@ PrefabInstance:
     - {fileID: 4540737038616504836, guid: c23b3f21ef01ef543b3b8cc664ffc88b, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 3511385215699519076, guid: c23b3f21ef01ef543b3b8cc664ffc88b, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1717720557}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c23b3f21ef01ef543b3b8cc664ffc88b, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:

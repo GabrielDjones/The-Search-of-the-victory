@@ -32,7 +32,7 @@ public class PlayerInteractor : MonoBehaviour
     bool policialExit = false;
     public string sceneName;
 
-    int hints;
+    public int hints;
     private void Start()
     {
         policial = FindAnyObjectByType(typeof(GameManagerPolicial)) as GameManagerPolicial;
@@ -43,7 +43,7 @@ public class PlayerInteractor : MonoBehaviour
 
     void Update()
     {
-        if (hints == 4)
+        if (hints == 10)
         {
             SceneManager.LoadScene(sceneName);
         }
@@ -89,22 +89,25 @@ public class PlayerInteractor : MonoBehaviour
                carac =false;
                dialogue.Carac();
                Debug.Log("carac");
-                walk.canMove = false;
+               walk.canMove = false;
             }
             else if ( hit.CompareTag("Ycaro") && ycaro)
             {
+                ycaro = false;
                 dialogue.Ycaro();
                 Debug.Log("ycaro");
                 walk.canMove = false;
             }
             else if (hit.CompareTag("Luka") && luka)
             {
+                luka = false;
                 dialogue.Luka();
                 Debug.Log("luka");
                 walk.canMove = false;
             }
             else if (hit.CompareTag("Patricia") && patricia)
             {
+                patricia = false;
                 dialogue.Patricia();
                 Debug.Log("patricia");
                 walk.canMove = false;
@@ -122,24 +125,20 @@ public class PlayerInteractor : MonoBehaviour
             cam.enabled = true;
             policialExit = false;
         }
-        if (carac)
+        if (!carac)
         {
-            carac = false;
             hints++;
         }
-        if (ycaro)
+        if (!ycaro)
         {
-            ycaro = false;
             hints++;
         }
-        if (luka) 
+        if (!luka) 
         {
-            luka = false;
             hints++;
         }
-        if (patricia)
+        if (!patricia)
         {
-            patricia = false;
             hints++;
         }
         else return;
