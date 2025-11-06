@@ -12,6 +12,7 @@ public class DialogueTrigger2 : MonoBehaviour
     public string[] Lines4;
     [TextArea(2, 5)]
     public string[] Lines5;
+
     bool luka = true;
     bool carac = true;
     bool ycaro = true;
@@ -33,6 +34,7 @@ public class DialogueTrigger2 : MonoBehaviour
         if (ycaro)
         {
             TextManager.Instance.StartDialogue(Lines3);
+            ycaro = false;
         }
     }
     public void Patricia()
@@ -40,6 +42,7 @@ public class DialogueTrigger2 : MonoBehaviour
         if (patricia)
         {
             TextManager.Instance.StartDialogue(Lines4);
+            patricia = false;
         }
     }
     public void Luka()
@@ -47,6 +50,7 @@ public class DialogueTrigger2 : MonoBehaviour
         if (luka)
         {
             TextManager.Instance.StartDialogue(Lines5);
+            luka = false;
         }
     }
 }

@@ -1,24 +1,33 @@
 using UnityEngine;
 
 public class WalkingCode : MonoBehaviour
-
 {
-    private float eixoX;
-    private float eixoY;
-    public float speed;
-    private Rigidbody2D body;
+    public float moveSpeed = 4f;
+    private Rigidbody2D rb;
+    private Vector2 movement;
+    [HideInInspector] public bool canMove = true; // controla se o player pode se mover
+
     void Start()
     {
-        body = GetComponent<Rigidbody2D>();
+        rb = GetComponent<Rigidbody2D>();
     }
-
 
     void Update()
     {
-        eixoX = Input.GetAxisRaw("Horizontal");
-        eixoY = Input.GetAxisRaw("Vertical");
+        if (!canMove)
+        {
+            movement = Vector2.zero;
+            return; // Sai do Update — não lê input
+        }
 
-        body.linearVelocity = new Vector2(eixoX, eixoY) * speed;
+        float x = Input.GetAxisRaw("Horizontal");
+        float y = Input.GetAxisRaw("Vertical");
 
+        movement = new Vector2(x, y).normalized;
+    }
+
+    void FixedUpdate()
+    {
+        rb.MovePosition(rb.position + movement * moveSpeed * Time.fixedDeltaTime);
     }
 }

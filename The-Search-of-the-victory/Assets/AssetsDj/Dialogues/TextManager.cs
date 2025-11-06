@@ -6,6 +6,7 @@ public class TextManager : MonoBehaviour
 {
     public CafeteriaManager cafe;
     GameManager gameManager;
+    PlayerInteractor policial;
 
     public static TextManager Instance;
 
@@ -22,6 +23,8 @@ public class TextManager : MonoBehaviour
 
         if (gameManager == null)
             gameManager = FindAnyObjectByType(typeof(GameManager)) as GameManager;
+        if (gameManager == null)
+            policial = FindAnyObjectByType(typeof(PlayerInteractor)) as PlayerInteractor;
     }
 
     void Awake()
@@ -55,6 +58,11 @@ public class TextManager : MonoBehaviour
                 else
                 {
                     dialogueBox.SetActive(false);
+                    if (policial != null)
+                    {
+                        policial.WalkEnablaed();
+                        policial.PolicialExit();
+                    }
                 }
             }
         }
@@ -64,7 +72,7 @@ public class TextManager : MonoBehaviour
     {
   
         if (dialogueLines == null || dialogueLines.Length == 0)
-        {
+        {   
             Debug.Log("StartDialogue foi chamado com um array vazio ou nulo!");
             return;
         }
