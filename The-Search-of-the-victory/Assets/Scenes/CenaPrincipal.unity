@@ -1438,17 +1438,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   linesAcerto:
-  - 'ok continuando '
-  - fale a pista relacionada
-  - fale a pista relacionada
+  - Muito bem;
+  - "Pr\xF3xima pergunta, quais foram as consequ\xEAncias dos supostos atos de Marco
+    Antonio Heredia Viveros?\r\n\r\n"
   lines2Acerto:
-  - place Holder
-  - place Holder
+  - "\xD3timo"
+  - "\xDAltima pergunta, onde foi o local do suposto crime?\r\n"
   lines3Acerto:
-  - certo
-  - certo
-  - certo
-  - certo
+  - ' Perfeito.
+
+'
+  - "Bom, voc\xEA respondeu todas as minhas perguntas, n\xE3o vejo o porque n\xE3o
+    proceder."
+  - " Bom, advogado Costa, pode come\xE7ar com os motivos nos quais voc\xEA pensa
+    que seu cliente n\xE3o deve ser preso.\r\n"
+  - "Primeiramente, ser\xE1 que a advogada maia est\xE1 realmente prop\xEDcia a cuidar
+    desse caso? N\xE3o sei se uma MULHER ainda por cima inexperiente deveria ajudar
+    a Maria nesse caso.\r\n"
   lines4Acerto:
   - 'place holder '
   - 'place holder '
@@ -1467,10 +1473,11 @@ MonoBehaviour:
   - certo
   - certo
   linesErro:
-  - "n\xE3o sabe o nome da cliente?"
-  - mas agora mostre a pista do sapato
+  - "Bom, espero que se saia melhor nas pr\xF3ximas;\r\n"
+  - "Pr\xF3xima pergunta, quais foram as consequ\xEAncias dos supostos atos de Marco
+    Antonio Heredia Viveros?\r\n\r\n"
   lines2Erro:
-  - "isso n\xE3o \xE9 uma sapato"
+  - "Vamos Maia, n\xE3o est\xE1 me convencendo.\r\n"
   - place holder
   lines3Erro:
   - errado
@@ -1518,7 +1525,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Lines:
-  - placeholder
+  - "Iniciamos a sess\xE3o para o caso de agress\xE3o contra Maria da penha"
   - placeholder
   - placeholder
   - placeholder
@@ -3251,7 +3258,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -135.78, y: -166.1998}
+  m_AnchoredPosition: {x: -135.78003, y: -166.1998}
   m_SizeDelta: {x: -245.15997, y: -332.4004}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &878073170

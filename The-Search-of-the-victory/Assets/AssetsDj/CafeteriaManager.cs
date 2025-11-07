@@ -8,6 +8,8 @@ public class CafeteriaManager : MonoBehaviour
     [SerializeField] TMP_Text CharName;
     DialogueTrigger dialogue;
    
+    public GameObject personagem1;
+    public GameObject personagem2;
 
     [SerializeField] Transform positionToTeleport;
     [SerializeField] Transform positionToTeleportCamera;
