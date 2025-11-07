@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -12,11 +13,17 @@ public class GameManager : MonoBehaviour
     [SerializeField] UnityEvent TesteEvent;
     [SerializeField] UnityEvent escolhaDePistaEvent;
     [SerializeField] UnityEvent sapatoEvent;
+    [SerializeField] UnityEvent respostaEvent;
+    [SerializeField] UnityEvent armaEvent;
+    [SerializeField] UnityEvent banheiraEvent;
 
     bool started = false;
     bool pistaClose = true;
     bool testeClose = true;
     bool sapatoClose = true;
+    bool resposta = true;
+    bool arma = true;
+    bool banheira = true;
     bool clicking;
     void Start()
     {
@@ -31,7 +38,7 @@ public class GameManager : MonoBehaviour
           clicks++;
        }
 
-       if (clicks == 10 && testeClose == true)
+       if (clicks == 10 && testeClose)
        {
             TesteEvent.Invoke();
             started = false;
@@ -51,6 +58,28 @@ public class GameManager : MonoBehaviour
             sapatoClose = false;
             started = false;
        }
+       if(clicks == 18 && resposta)
+       {
+            respostaEvent.Invoke();
+            resposta = false;
+            started =false;
+       }
+       if(clicks == 24 && arma)
+       {
+            armaEvent.Invoke();
+            arma = false;
+            started = false;
+       }
+        if (clicks == 29 && banheira)
+        {
+            banheiraEvent.Invoke();
+            banheira = false;
+            started = false;
+        }
+        if (clicks == 32)
+        {
+            SceneManager.LoadScene("Victory");
+        }
 
     }
     public void Typing(bool x)
