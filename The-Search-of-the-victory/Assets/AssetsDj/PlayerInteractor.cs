@@ -56,9 +56,11 @@ public class PlayerInteractor : MonoBehaviour
 
             if (hit.gameObject.CompareTag("Policial") && first == true)
             {
+                Debug.Log("interagiu1");
                 first = false;
                 if (cafe != null)
                 {
+                    Debug.Log("interagiu");
                     cafe.Policia();
                     trigger.InteractPolicial();
                 }

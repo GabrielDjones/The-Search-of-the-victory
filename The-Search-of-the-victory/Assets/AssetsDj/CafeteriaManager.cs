@@ -2,15 +2,28 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class CafeteriaManager : MonoBehaviour
 {
     [SerializeField] TMP_Text CharName;
     DialogueTrigger dialogue;
    
-    public GameObject personagem1;
-    public GameObject personagem2;
+    public Image personagem1;
+    public Image personagem2;
 
+    public Sprite maia;
+    public Sprite maia2;
+    public Sprite maia3;
+
+    public Sprite diego;
+    public Sprite isaac;
+
+    public Sprite maria;
+
+    public Sprite klaus;
+    public Sprite klaus2;
+  
     [SerializeField] Transform positionToTeleport;
     [SerializeField] Transform positionToTeleportCamera;
 
@@ -32,7 +45,8 @@ public class CafeteriaManager : MonoBehaviour
         dialogue = FindAnyObjectByType(typeof(DialogueTrigger)) as DialogueTrigger;
         dialogue.Interact();
         CharName.text = "Maia";
-
+        personagem1.sprite = maia;
+        personagem2.sprite = isaac;
     }
 
     void Update()
@@ -96,24 +110,54 @@ public class CafeteriaManager : MonoBehaviour
 
     private void NameManager()
     {
-        if (clicks == 3) CharName.text = "Isaac";
+        if (clicks == 3)
+        {
+            CharName.text = "Isaac";
+            personagem1.sprite = maia2;
+        }
+        if (clicks == 5) 
+        {
+            CharName.text = "Maia";
+            personagem1.sprite = maia;
+        }
 
-        if (clicks == 5) CharName.text = "Maia";
 
-        if (clicks == 7) CharName.text = "Diego";
+        if (clicks == 7)
+        {
+            CharName.text = "Diego";
+            personagem2.sprite = diego;
+            personagem1.sprite = maia2;
+        }
 
-        if (clicks == 8) CharName.text = "Isaac";
+        if (clicks == 8)
+        {
+            CharName.text = "Isaac";
+            personagem2.sprite = isaac;
+        }
 
-        if (clicks == 11) CharName.text = "Diego";
+        if (clicks == 11)
+        {
+            CharName.text = "Diego";
+            personagem2.sprite = diego;
+        }
 
-        if (clicks == 12) CharName.text = "Isaac";
+        if (clicks == 12)
+        {
+            CharName.text = "Isaac";
+            personagem2.sprite = isaac;
+        }
 
-        if (clicks == 13) CharName.text = "Maia";
-
+        if (clicks == 13)
+        {
+            CharName.text = "Maia";
+            personagem1.sprite = maia;
+        }
         //---------------------------------------//
 
-        if (clicks == 21) CharName.text = "Maria da Penha";
+        if(clicks == 20) {personagem2.sprite = maria; }
+        if (clicks == 21) { CharName.text = "Maria da Penha"; }
 
+        
         if (clicks == 22) CharName.text = "Maia";
 
         if (clicks == 25) CharName.text = "Maria da Penha";
@@ -129,7 +173,10 @@ public class CafeteriaManager : MonoBehaviour
         if (clicks == 31) CharName.text = "Maia";
 
         //-------------------------------------//
-
+        if(clicks == 40)
+        {
+            personagem2.sprite = klaus;
+        }
         if (clicks == 41) CharName.text = "policial";
 
         if (clicks == 42) CharName.text = "Maia";

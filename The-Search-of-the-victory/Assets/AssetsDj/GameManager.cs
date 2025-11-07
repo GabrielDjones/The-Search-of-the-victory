@@ -38,45 +38,45 @@ public class GameManager : MonoBehaviour
           clicks++;
        }
 
-       if (clicks == 10 && testeClose)
+       if (clicks == 8 && testeClose)
        {
             TesteEvent.Invoke();
             started = false;
             testeClose = false;
        }
 
-       if (clicks == 12 && pistaClose)
+       if (clicks == 10 && pistaClose)
        {
             escolhaDePistaEvent.Invoke();
             pistaClose = false;
             started = false;
        }
               
-       if(clicks == 14 && sapatoClose)
+       if(clicks == 12 && sapatoClose)
        {
             sapatoEvent.Invoke();
             sapatoClose = false;
             started = false;
        }
-       if(clicks == 18 && resposta)
+       if(clicks == 16 && resposta)
        {
             respostaEvent.Invoke();
             resposta = false;
             started =false;
        }
-       if(clicks == 24 && arma)
+       if(clicks == 22 && arma)
        {
             armaEvent.Invoke();
             arma = false;
             started = false;
        }
-        if (clicks == 29 && banheira)
+        if (clicks == 27 && banheira)
         {
             banheiraEvent.Invoke();
             banheira = false;
             started = false;
         }
-        if (clicks == 32)
+        if (clicks == 30)
         {
             SceneManager.LoadScene("Victory");
         }
