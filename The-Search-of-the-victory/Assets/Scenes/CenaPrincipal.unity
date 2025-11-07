@@ -5671,7 +5671,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 95ec02f5f95cff144953709a2f8697fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneName: GabrielDjones
+  sceneName: Lose
   slider: {fileID: 1332517289}
   life: 3
   lifeMax: 3
