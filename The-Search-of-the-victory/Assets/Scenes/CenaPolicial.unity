@@ -413,7 +413,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -179.94458, y: -179.94461}
+  m_AnchoredPosition: {x: -179.94455, y: -179.94461}
   m_SizeDelta: {x: -359.89, y: -359.89}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &129492572
@@ -1475,7 +1475,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -162.9447, y: -157.44171}
+  m_AnchoredPosition: {x: -162.94467, y: -157.44171}
   m_SizeDelta: {x: -359.89, y: -359.89}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &512036760
@@ -3526,7 +3526,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -157.45154, y: -179.94458}
+  m_AnchoredPosition: {x: -157.4515, y: -179.94458}
   m_SizeDelta: {x: -314.9, y: -359.89}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1608148381
@@ -3898,18 +3898,18 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1848974784}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
   m_LocalPosition: {x: 0, y: 0, z: 90.19998}
   m_LocalScale: {x: 0.022229062, y: 0.022229062, z: 0.022229062}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 688470212}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -33.553406, y: -2.3207092}
-  m_SizeDelta: {x: 70.02, y: 164.96}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -32.70618, y: -4.972}
+  m_SizeDelta: {x: 39.7411, y: 173.7914}
+  m_Pivot: {x: 0.499999, y: 0.5000001}
 --- !u!114 &1848974786
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3963,7 +3963,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: GabrielDjones
+          m_StringArgument: CenaNpcs
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1848974787

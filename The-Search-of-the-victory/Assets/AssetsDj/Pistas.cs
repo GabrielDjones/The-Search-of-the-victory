@@ -25,7 +25,7 @@ public class Pistas : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(hints >= 4)
+        if(hints >= 3)
         {
             entregarPistas.Invoke();
         }
