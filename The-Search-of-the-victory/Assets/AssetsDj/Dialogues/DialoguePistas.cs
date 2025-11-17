@@ -15,6 +15,8 @@ public class DialoguePistas : MonoBehaviour
     public string[] lines5Acerto;
     [TextArea(2, 5)]
     public string[] lines6Acerto;
+    [TextArea(2, 5)]
+    public string[] lines7Acerto;
 
     [TextArea(2, 5)]
     public string[] linesErro;
@@ -26,6 +28,8 @@ public class DialoguePistas : MonoBehaviour
     public string[] lines5Erro;
     [TextArea(2, 5)]
     public string[] lines6Erro;
+    [TextArea(2, 5)]
+    public string[] lines7Erro;
     int times;
 
 
@@ -63,6 +67,10 @@ public class DialoguePistas : MonoBehaviour
             TextManager.Instance.StartDialogue(lines6Acerto);
             times++;
         }
+        else if (times == 6)
+        {
+            TextManager.Instance.StartDialogue(lines7Acerto);
+        }
 
 
     }
@@ -92,6 +100,10 @@ public class DialoguePistas : MonoBehaviour
         {
             TextManager.Instance.StartDialogue(lines6Erro);
             times++;
+        }
+        else if (times == 6)
+        {
+            TextManager.Instance.StartDialogue(lines7Erro);
         }
     }
 }

@@ -1457,6 +1457,7 @@ MonoBehaviour:
   dialogueBox: {fileID: 701378621}
   dialogueText: {fileID: 710259101}
   typingSpeed: 0.04
+  player: {fileID: 0}
   isTyping: 0
 --- !u!4 &701686261
 Transform:
@@ -2755,6 +2756,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CharName: {fileID: 397254221}
+  personagem1: {fileID: 0}
+  personagem2: {fileID: 0}
+  maia: {fileID: 0}
+  maia2: {fileID: 0}
+  maia3: {fileID: 0}
+  diego: {fileID: 0}
+  isaac: {fileID: 0}
+  maria: {fileID: 0}
+  klaus: {fileID: 0}
+  klaus2: {fileID: 0}
   positionToTeleport: {fileID: 507871762}
   positionToTeleportCamera: {fileID: 1907872413}
   player: {fileID: 897718756}
@@ -3238,6 +3249,7 @@ MonoBehaviour:
   Lines3: []
   Lines4: []
   Lines5: []
+  Lines6: []
 --- !u!1 &1907872412
 GameObject:
   m_ObjectHideFlags: 0
