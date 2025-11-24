@@ -1222,7 +1222,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -202, y: 21}
+  m_AnchoredPosition: {x: -193, y: 31}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &386231126
@@ -1802,109 +1802,111 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   linesAcerto:
-  - juiz - Muito bem;
-  - "juiz -Pr\xF3xima pergunta, quais foram as consequ\xEAncias dos supostos atos
+  - 'Juiz:
+
+    Muito bem;'
+  - "Juiz: \nPr\xF3xima pergunta, quais foram as consequ\xEAncias dos supostos atos
     de Marco Antonio Heredia Viveros?\r\n\r\n"
   lines2Acerto:
-  - "juiz -\xD3timo"
-  - "juiz -\xDAltima pergunta, onde foi o local do suposto crime?\r\n"
+  - "Juiz: \n\xD3timo"
+  - "Juiz:\n\xDAltima pergunta, onde foi o local do suposto crime?\r\n"
   lines3Acerto:
-  - 'juiz - Perfeito.
+  - 'Juiz:
+
+    Perfeito.
 
 '
-  - "juiz - Bom, voc\xEA respondeu todas as minhas perguntas, n\xE3o vejo o porque
+  - "Juiz: \nBom, voc\xEA respondeu todas as minhas perguntas, n\xE3o vejo o porque
     n\xE3o proceder."
-  - " juiz - Bom, advogado Costa, pode come\xE7ar com os motivos nos quais voc\xEA
+  - "Juiz:\nBom, advogado Costa, pode come\xE7ar com os motivos nos quais voc\xEA
     pensa que seu cliente n\xE3o deve ser preso.\r\n"
-  - "Costa - Primeiramente, ser\xE1 que a advogada maia est\xE1 realmente prop\xEDcia
+  - "Costa:\nPrimeiramente, ser\xE1 que a advogada maia est\xE1 realmente prop\xEDcia
     a cuidar desse caso? N\xE3o sei se uma MULHER ainda por cima inexperiente deveria
     ajudar a Maria nesse caso.\r\n"
   lines4Acerto:
-  - "costa - \u2026 "
-  - "costa - Vamos come\xE7ar ent\xE3o. Maria da Penha afirma que meu cliente havia
+  - "Costa:\n \u2026 "
+  - "Costa:\nVamos come\xE7ar ent\xE3o. Maria da Penha afirma que meu cliente havia
     atirado nela enquanto ela estava tirando sua sonequinha da beleza, onde est\xE3o
     as provas disso?\r\n"
-  - "Maia: Para come\xE7ar, sr. costa, a vizinha de Maria havia escutado um barulho
+  - "Maia: \nPara come\xE7ar, sr. costa, a vizinha de Maria havia escutado um barulho
     de tiros vindo da casa dela e gritos de socorro.\r\n"
-  - "Costa: E como voc\xEA pode provar que foi o MEU cliente que disparou a arma,
+  - "Costa: \nE como voc\xEA pode provar que foi o MEU cliente que disparou a arma,
     espertalhona?\r\n"
   lines5Acerto:
-  - "Maia - Como voc\xEA pode ver, eu fiz uma pequena visita na cena do crime e me
+  - "Maia:\nComo voc\xEA pode ver, eu fiz uma pequena visita na cena do crime e me
     precipitei pedindo um teste de digital da arma, comprovando que ningu\xE9m al\xE9m
     de Marcos sequer encostou em tal.\r\n"
-  - "Juiz: Acho que voc\xEA deveria tentar outro argumento, advogado costa.\r\n"
-  - "Costa: M-mas\u2026ugh, t\xE1\u2026"
-  - "Costa: O meu cliente se retratou, ele realmente \xE9 dono da arma, mas usou
+  - "Juiz:\nAcho que voc\xEA deveria tentar outro argumento, advogado costa.\r\n"
+  - "Costa: \nM-mas\u2026ugh, t\xE1\u2026"
+  - "Costa:\nO meu cliente se retratou, ele realmente \xE9 dono da arma, mas usou
     para protege-la durante o assalto.\r\n"
-  - "Juiz: Voc\xEA tem alguma acusa\xE7\xE3o ou prova que gostaria de mostrar contra
+  - "Juiz: \nVoc\xEA tem alguma acusa\xE7\xE3o ou prova que gostaria de mostrar contra
     o argumento, advogada Maia?\r\n"
   lines6Acerto:
-  - "Maia: Sim merit\xEDssimo, a bala que foi encontrada dentro do corpo de Maria
+  - "Maia:\nSim merit\xEDssimo, a bala que foi encontrada dentro do corpo de Maria
     se mostra ser da arma de Marcos."
-  - "Maia: al\xE9m do sangue na cama ser testado como apenas dela e mais ningu\xE9m,
+  - "Maia: \nal\xE9m do sangue na cama ser testado como apenas dela e mais ningu\xE9m,
     como de algum ladr\xE3o ou algo do g\xEAnero."
-  - "Juiz: Hmm, Costa\u2026O julgamento n\xE3o est\xE1 indo bem para voc\xEA, recomendo
+  - "Juiz: \nHmm, Costa\u2026O julgamento n\xE3o est\xE1 indo bem para voc\xEA, recomendo
     que tente algum argumento.\r\n"
-  - "Costa: Ugh! Marco afirma que n\xE3o tentou eletrocutar Maria na banheira!\r\n"
-  - 'Juiz: Maia?
-
-'
+  - "Costa:\n Ugh! Marco afirma que n\xE3o tentou eletrocutar Maria na banheira!\r\n"
+  - "Juiz: \nMaia?\n"
   lines7Acerto:
-  - "Bom, eu tenho uma foto do secador de \r\ncabelo de Maria que est\xE1 com sinal
-    de estar queimado e est\xE1 pr\xF3ximo \xE0 banheira, ent\xE3o as provas mostram
-    o contr\xE1rio\u2026\r\n"
-  - "Juiz: Bom, Maia, seu primeiro tribunal foi um sucesso. Eu declaro o r\xE9u deste
-    caso culpado, e que dever\xE1 passar por 19 anos de pris\xE3o."
-  - "Maia: Isso! Muito obrigada, merit\xEDssimo."
-  - 'Costa: Merda! Como isso aconteceu?? Como eu perdi para uma mulher??
-
-'
-  - "Juiz: Sr. costa, devo lhe lembrar que deveremos manter o respeito dentro deste
+  - "Maia:\nBom, eu tenho uma foto do secador de \r\ncabelo de Maria que est\xE1
+    com sinal de estar queimado e est\xE1 pr\xF3ximo \xE0 banheira, ent\xE3o as provas
+    mostram o contr\xE1rio\u2026\r\n"
+  - "Juiz:\nBom, Maia, seu primeiro tribunal foi um sucesso. Eu declaro o r\xE9u
+    deste caso culpado, e que dever\xE1 passar por 19 anos de pris\xE3o."
+  - "Maia:\n Isso! Muito obrigada, merit\xEDssimo."
+  - "Costa: \nMerda! Como isso aconteceu?? Como eu perdi para uma mulher??\n"
+  - "Juiz: \nSr. costa, devo lhe lembrar que deveremos manter o respeito dentro deste
     tribunal\u2026\r\n"
-  - "Costa: Sim, perd\xE3o, merit\xEDssimo\u2026\r\n"
+  - "Costa: \nSim, perd\xE3o, merit\xEDssimo\u2026\r\n"
   linesErro:
-  - "Juiz: Bom, espero que se saia melhor nas pr\xF3ximas.\r\n"
-  - "Juiz: Pr\xF3xima pergunta, quais foram as consequ\xEAncias dos supostos atos
+  - "Juiz:\nBom, espero que se saia melhor nas pr\xF3ximas.\r\n"
+  - "Juiz:\nPr\xF3xima pergunta, quais foram as consequ\xEAncias dos supostos atos
     de Marco Antonio Heredia Viveros?\r\n\r\n"
   lines2Erro:
-  - "Juiz: Vamos Maia, n\xE3o est\xE1 me convencendo.\r\n"
-  - "Juiz: \xDAltima pergunta, onde foi o local do suposto crime?\r\n"
+  - "Juiz:\nVamos Maia, n\xE3o est\xE1 me convencendo.\r\n"
+  - "Juiz: \n\xDAltima pergunta, onde foi o local do suposto crime?\r\n"
   lines3Erro:
-  - "Juiz: Ok\u2026Espero que v\xE1 melhor no julgamento.\r\n"
-  - "Juiz: Bom, voc\xEA respondeu todas as minhas perguntas, n\xE3o vejo o porque
+  - "Juiz:\nOk\u2026Espero que v\xE1 melhor no julgamento.\r\n"
+  - "Juiz: \nBom, voc\xEA respondeu todas as minhas perguntas, n\xE3o vejo o porque
     n\xE3o proceder."
-  - "juiz: Bom, advogado Costa, pode come\xE7ar com os motivos nos quais voc\xEA
+  - "juiz: \nBom, advogado Costa, pode come\xE7ar com os motivos nos quais voc\xEA
     pensa que seu cliente n\xE3o deve ser preso.\r\n"
-  - "Costa: Primeiramente, ser\xE1 que a advogada maia est\xE1 realmente prop\xEDcia
+  - "Costa: \nPrimeiramente, ser\xE1 que a advogada maia est\xE1 realmente prop\xEDcia
     a cuidar desse caso? N\xE3o sei se uma MULHER ainda por cima inexperiente deveria
     ajudar a Maria nesse caso.\r\n"
   lines5Erro:
-  - "Maia - n\xE3o, merit\xEDssimo\u2026"
-  - "Juiz: Acho que voc\xEA deveria tentar outro argumento, advogado costa."
-  - "Costa: M-mas\u2026ugh, t\xE1\u2026 "
-  - "costa - O meu cliente se retratou, ele realmente \xE9 dono da arma, mas usou
+  - "Maia: \nn\xE3o, merit\xEDssimo\u2026"
+  - "Juiz: \nAcho que voc\xEA deveria tentar outro argumento, advogado costa."
+  - "Costa: \nM-mas\u2026ugh, t\xE1\u2026 "
+  - "costa:\nO meu cliente se retratou, ele realmente \xE9 dono da arma, mas usou
     para protege-la durante o assalto.\r\n"
-  - "juiz - Voc\xEA tem alguma acusa\xE7\xE3o ou prova que gostaria de mostrar contra
+  - "juiz:\nVoc\xEA tem alguma acusa\xE7\xE3o ou prova que gostaria de mostrar contra
     o argumento, advogada Maia?"
   lines6Erro:
-  - " maia - Acho que n\xE3o\u2026\r\n"
-  - "Juiz: Hmm, Costa\u2026O julgamento est\xE1 indo bem para voc\xEA, recomendo
+  - " maia: \nAcho que n\xE3o\u2026\r\n"
+  - "Juiz: \nHmm, Costa\u2026O julgamento est\xE1 indo bem para voc\xEA, recomendo
     que tente algum outro argumento, e talvez voc\xEA ganhe.\r\n"
-  - "Juiz: Marco afirma que n\xE3o tentou eletrocutar Maria na banheira!\r\n"
-  - 'Juiz: Maia?
+  - "Juiz: \nMarco afirma que n\xE3o tentou eletrocutar Maria na banheira!\r\n"
+  - 'Juiz:
+
+    Maia?
 
 '
   lines7Erro:
-  - "maia: Sem resposta merit\xEDssimo\u2026"
-  - "Juiz: Bom, Maia, seu primeiro tribunal foi um sucesso. Eu declaro o r\xE9u deste
-    caso culpado, e que dever\xE1 passar por 19 anos de pris\xE3o."
-  - "Maia: Isso! Muito obrigada, merit\xEDssimo."
-  - 'Costa: Merda! Como isso aconteceu?? Como eu perdi para uma mulher??'
+  - "maia:\nSem resposta merit\xEDssimo\u2026"
+  - "Juiz:\nBom, Maia, seu primeiro tribunal foi um sucesso. Eu declaro o r\xE9u
+    deste caso culpado, e que dever\xE1 passar por 19 anos de pris\xE3o."
+  - "Maia: \nIsso! Muito obrigada, merit\xEDssimo."
+  - "Costa: \nMerda! Como isso aconteceu?? Como eu perdi para uma mulher??"
   - "Juiz: Sr. costa, devo lhe lembrar que deveremos manter o respeito dentro deste
     tribunal\u2026"
-  - "Juiz: Sr. costa, devo lhe lembrar que deveremos manter o respeito dentro deste
+  - "Juiz: \nSr. costa, devo lhe lembrar que deveremos manter o respeito dentro deste
     tribunal\u2026"
-  - "Costa: Sim, perd\xE3o, merit\xEDssimo\u2026\n"
+  - "Costa: \nSim, perd\xE3o, merit\xEDssimo\u2026\n"
 --- !u!114 &478331961
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1936,18 +1938,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Lines:
-  - "juiz - Iniciamos a sess\xE3o para o caso de agress\xE3o contra Maria da penha"
-  - "Maia - Uhh, a acusa\xE7\xE3o est\xE1 pronta, Merit\xEDssimo.\r\n"
-  - "Costa - A defesa est\xE1 pronta, Merit\xEDssimo.\r\n"
-  - "Juiz - Essa \xE9 sua primeira vez no tribunal, n\xE3o \xE9 promotora Maia?\r\n"
-  - "Maia - Sim, merit\xEDssimo"
-  - "Juiz - Bom, isso vai definir o destino de sua cliente, espero que n\xE3o deixe
+  - "juiz: \nIniciamos a sess\xE3o para o caso de agress\xE3o contra Maria da penha"
+  - "Maia:\nUhh, a acusa\xE7\xE3o est\xE1 pronta, Merit\xEDssimo.\r\n"
+  - "Costa:\nA defesa est\xE1 pronta, Merit\xEDssimo.\r\n"
+  - "Juiz:\nEssa \xE9 sua primeira vez no tribunal, n\xE3o \xE9 promotora Maia?\r\n"
+  - "Maia: \nSim, merit\xEDssimo"
+  - "Juiz:\nBom, isso vai definir o destino de sua cliente, espero que n\xE3o deixe
     seu nervosismo atrapalhar no seu caso.\r\n"
-  - "Maia: E-exatamente, merit\xEDssimo\u2026\r\n"
-  - "Juiz -  Sra. Maia, dadas as circunst\xE2ncias de este ser o seu primeiro caso,
+  - "Maia:\nE-exatamente, merit\xEDssimo\u2026\r\n"
+  - "Juiz:\nSra. Maia, dadas as circunst\xE2ncias de este ser o seu primeiro caso,
     acho que seria bom come\xE7armos com algumas perguntas b\xE1sicas "
-  - ' juiz - Farei 3 perguntas, sra. Maia.'
-  - "Juiz - Por favor, me diga o nome inteiro do r\xE9u deste caso."
+  - 'Juiz:
+
+    Farei 3 perguntas, sra. Maia.'
+  - "Juiz:\nPor favor, me diga o nome inteiro do r\xE9u deste caso."
   Lines2: []
   Lines3: []
   Lines4: []
