@@ -336,17 +336,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DialogueTrigger2
   Lines:
-  - Eai, conseguiu?
-  - Sim, tirei foto de todas as pistas importantes, espero que ajude.
-  - Muito obrigada!
+  - 'Maia:
+
+    Eai, conseguiu?'
+  - 'Klaus:
+
+    Sim, tirei foto de todas as pistas importantes, espero que ajude.'
+  - 'Maia:
+
+    Muito obrigada!'
   Lines2:
   - "Oii! Meu nome \xE9 Maia, eu queria saber se voc\xEA sabe algo sobre o que aconteceu
-    com a Maria da Penha alguns dias atr\xE1s"
-  - "Ol\xE1! Meu nome \xE9 Ycaro. Bom, a \xFAnica coisa que sei sobre o caso \xE9
+    com a Maria da Penha alguns dias atr\xE1s "
+  - "Ol\xE1! Meu nome \xE9 Chucky. Bom, a \xFAnica coisa que sei sobre o caso \xE9
     que o marido dela deu um tiro nas costas da Maria enquanto ela dormia. Um absurdo,
     n\xE9?"
-  - "Nossa, que  covarde\u2026 Voc\xEA tem mais alguma informa\xE7\xE3o que seja
-    importante sobre?\r\n"
+  - " Nossa, que  covarde\u2026 Voc\xEA tem mais alguma informa\xE7\xE3o que seja
+    importante sobre?"
   - "Infelizmente n\xE3o possuo mais nenhuma informa\xE7\xE3o por agora, mas acho
     que uma pessoa na rua aqui do lado tem."
   - 'Agora tenho que ir, Adeus!
@@ -378,7 +384,8 @@ MonoBehaviour:
   - "skz\u2026skz\u2026\r\n"
   - ...
   - oi?
-  - 'ai, desculpa eu desassociei um pouco '
+  - " ai, desculpa eu desassociei um pouco, fiquei congelada por uns anos, com o
+    meu amigo\u2026 "
   - " Hm, Deixa eu ver, eu lembro da minha m\xE3e falando que o marido dela depois
     daquele rolo todo falou que tudo n\xE3o se passava de um assalto"
   - "Mentindo obviamente, mas sei l\xE1, \xE9 isso que eu sei."
@@ -388,8 +395,9 @@ MonoBehaviour:
   - "Nossa, isso vai me ajudar pra caramba, muito obrigada mesmo, ali\xE1s seus cachorros
     e a gatinha s\xE3o muito fofinhos."
   - " Hooza! Eu sou incr\xEDvel.."
-  - "Muito obrigada, s\xF3 fico com pena dos cachorros sem dono, mas enfim. Boa sorte
-    no tribunal amanh\xE3 ent\xE3o eu acho, espero que n\xE3o d\xEA nenhuma neblina\u2026"
+  - "Muito obrigada, s\xF3 fico com pena dos cachorros sem dono, mas enfim. "
+  - "Boa sorte no tribunal amanh\xE3 ent\xE3o eu acho, espero que n\xE3o d\xEA nenhuma
+    neblina\u2026. "
   Lines5:
   - "han? que que voc\xEA quer"
   - "\u2026"
@@ -415,9 +423,9 @@ MonoBehaviour:
   - "\u2026"
   - ta..?
   Lines6:
-  - place holder
-  - place holder
-  - place holder
+  - " Por mais que estas pistas sejam boas n\xE3o sei se \xE9 o suficiente."
+  - "Acho que vou andar pela cidade a procura de mais alguma informa\xE7\xE3o \xFAtil
+    ou alguma testemunha.\r\n"
 --- !u!1 &192168183
 GameObject:
   m_ObjectHideFlags: 0
@@ -1597,7 +1605,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -264, y: -4}
+  m_AnchoredPosition: {x: -264, y: 27}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1087031350
@@ -1620,9 +1628,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'vai entra nop
+  m_text: 'Maia:
 
-'
+    sadaxxczxczxv'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1649,8 +1657,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 26
-  m_fontSizeBase: 26
+  m_fontSize: 24.05
+  m_fontSizeBase: 24.05
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
