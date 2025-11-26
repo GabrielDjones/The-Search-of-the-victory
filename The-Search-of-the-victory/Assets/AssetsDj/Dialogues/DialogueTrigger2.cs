@@ -1,5 +1,6 @@
 using UnityEngine;
-
+using UnityEngine.UI;
+s
 public class DialogueTrigger2 : MonoBehaviour
 {
     [TextArea(2, 5)]
@@ -15,6 +16,13 @@ public class DialogueTrigger2 : MonoBehaviour
     [TextArea(2, 5)]
     public string[] Lines6;
 
+    public Image personagem1;
+    public Image personagem2;
+
+    public Sprite maia;
+    public Sprite Carac;
+    public Sprite Ycaro;
+    
     bool luka = true;
     bool carac = true;
     bool ycaro = true;
