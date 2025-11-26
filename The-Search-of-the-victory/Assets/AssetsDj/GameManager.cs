@@ -1,11 +1,17 @@
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
-    
 
+    public List<Sprite> sprites = new List<Sprite> { };
+
+    public Image personagem1;
+    public Image personagem2;
+ 
     DialogueTrigger2 dialogueTrigger;
     TextManager textManager;
     public  int clicks;
@@ -91,6 +97,12 @@ public class GameManager : MonoBehaviour
        }
 
     }
+
+    public void ImageSwitch()
+    {
+        if( clicks == )
+    }
+
     public void Typing(bool x)
     {
         clicking = x;
@@ -105,4 +117,5 @@ public class GameManager : MonoBehaviour
     {
         started = true;
     }
+
 }

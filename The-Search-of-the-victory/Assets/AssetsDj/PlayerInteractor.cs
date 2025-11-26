@@ -54,7 +54,9 @@ public class PlayerInteractor : MonoBehaviour
         {
             Debug.Log("apertou E");
 
-            if (hit.gameObject.CompareTag("Policial") && first == true)
+            if(hit != null)
+            { 
+                 if (hit.gameObject.CompareTag("Policial") && first == true)
             {
                 Debug.Log("interagiu1");
                 first = false;
@@ -114,6 +116,8 @@ public class PlayerInteractor : MonoBehaviour
                 Debug.Log("patricia");
                 walk.canMove = false;
             }
+            }
+           
 
         }
     }
@@ -124,7 +128,7 @@ public class PlayerInteractor : MonoBehaviour
         if (policialExit)
         {
             policialExit = false;
-            CameraController2D cam = Cam.GetComponent<CameraController2D>();
+            CameraManager cam = Cam.GetComponent<CameraManager>();
             player.transform.position = positionToTeleport.position;
             walk.canMove = false;
             dialogue.Think();

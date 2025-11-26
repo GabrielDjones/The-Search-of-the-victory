@@ -32,8 +32,8 @@ public class DialoguePistas : MonoBehaviour
     public string[] lines7Erro;
     int times;
 
-
    
+
     public void Interact()
     {
        

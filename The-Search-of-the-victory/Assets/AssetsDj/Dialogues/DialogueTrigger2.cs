@@ -1,6 +1,7 @@
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-s
+
 public class DialogueTrigger2 : MonoBehaviour
 {
     [TextArea(2, 5)]
@@ -19,10 +20,9 @@ public class DialogueTrigger2 : MonoBehaviour
     public Image personagem1;
     public Image personagem2;
 
-    public Sprite maia;
-    public Sprite Carac;
-    public Sprite Ycaro;
-    
+
+    public List<Sprite> sprites = new List<Sprite> { }; 
+
     bool luka = true;
     bool carac = true;
     bool ycaro = true;
@@ -30,6 +30,8 @@ public class DialogueTrigger2 : MonoBehaviour
     public void Interact()
     {
         TextManager.Instance.StartDialogue(Lines);
+        personagem1.sprite = sprites[0];
+        personagem2.sprite = sprites[1];
     }
     public void Carac()
     {
@@ -37,6 +39,7 @@ public class DialogueTrigger2 : MonoBehaviour
         {
             TextManager.Instance.StartDialogue(Lines2);
             carac = false;
+            personagem2.sprite = sprites[2];
         }
     }
     public void Ycaro()
@@ -45,6 +48,7 @@ public class DialogueTrigger2 : MonoBehaviour
         {
             TextManager.Instance.StartDialogue(Lines3);
             ycaro = false;
+            personagem2.sprite = sprites[3];
         }
     }
     public void Patricia()
@@ -53,6 +57,7 @@ public class DialogueTrigger2 : MonoBehaviour
         {
             TextManager.Instance.StartDialogue(Lines4);
             patricia = false;
+            personagem2.sprite = sprites[4];
         }
     }
     public void Luka()
@@ -61,10 +66,12 @@ public class DialogueTrigger2 : MonoBehaviour
         {
             TextManager.Instance.StartDialogue(Lines5);
             luka = false;
+            personagem2.sprite = sprites[5];
         }
     }
     public void Think()
     {
         TextManager.Instance.StartDialogue(Lines6);
+        personagem2.sprite = sprites[6];
     }
 }
