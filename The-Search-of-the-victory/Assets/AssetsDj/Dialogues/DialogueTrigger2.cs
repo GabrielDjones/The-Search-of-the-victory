@@ -30,8 +30,11 @@ public class DialogueTrigger2 : MonoBehaviour
     public void Interact()
     {
         TextManager.Instance.StartDialogue(Lines);
-        personagem1.sprite = sprites[0];
-        personagem2.sprite = sprites[1];
+        if(personagem1 != null && personagem2 != null)
+        {
+            personagem1.sprite = sprites[0];
+            personagem2.sprite = sprites[1];
+        }
     }
     public void Carac()
     {
