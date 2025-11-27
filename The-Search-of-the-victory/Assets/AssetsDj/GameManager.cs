@@ -9,8 +9,13 @@ public class GameManager : MonoBehaviour
 
     public List<Sprite> sprites = new List<Sprite> { };
 
+    List<int> juiz = new List<int> {1,4,6,8,9,10,11,12,13,14,15,16,17,24,26,29,31,33,35,38};
+    List<int> maia = new List<int> {2,5,7,21,23,25,30,34,36};
+    List<int> costa = new List<int> { 3, 18, 19, 20, 22, 27, 28, 32, 37, 39 };
+
     public Image personagem1;
     public Image personagem2;
+    public Image personagem3;
  
     DialogueTrigger2 dialogueTrigger;
     TextManager textManager;
@@ -91,7 +96,7 @@ public class GameManager : MonoBehaviour
             sangue = false;
             started = false;
        }
-       if (clicks == 38)
+       if (clicks == 39)
        {
            SceneManager.LoadScene("Victory");
        }
@@ -100,7 +105,35 @@ public class GameManager : MonoBehaviour
 
     public void ImageSwitch()
     {
-        if( clicks == )
+        for (int i = 0; i < juiz.Count; i++) 
+        {
+            if (clicks == juiz[i]) 
+            {
+                personagem3.sprite = sprites[0];
+            }
+            else
+            {
+                personagem3.sprite = sprites[1];
+            }
+        }
+        for (int i = 0; i < maia.Count; i++)
+        {
+            if(clicks == maia[i])
+            {
+                personagem1.sprite = sprites[2];
+            }
+            else
+            {
+                personagem1.sprite= sprites[3];
+            }
+        }
+        for (int i = 0;i < costa.Count; i++)
+        {
+            if (clicks == costa[i])
+            {
+                personagem2.sprite = sprites[2];
+            }
+        }
     }
 
     public void Typing(bool x)
