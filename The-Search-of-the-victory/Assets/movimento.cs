@@ -33,13 +33,13 @@ public class movimento : MonoBehaviour
 
         if (moveSpeed.x < 0)
         {
-            animator.Play("player walk foward");
+            animator.Play("walking left");
             return;
         }
 
         if (moveSpeed.x > 0)
         {
-            animator.Play("walk back");
+            animator.Play("walking right");
             return;
         }
         animator.Play("idle");

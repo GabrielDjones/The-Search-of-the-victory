@@ -9,14 +9,26 @@ public class GameManager : MonoBehaviour
 
     public List<Sprite> sprites = new List<Sprite> { };
 
-    List<int> juiz = new List<int> {0,1,4,6,8,9,10,11,12,13,14,15,16,17,24,26,29,31,33,35,38};
     List<int> maia = new List<int> {2,5,7,21,23,25,30,34,36};
     List<int> costa = new List<int> { 3, 18, 19, 20, 22, 27, 28, 32, 37, 39 };
 
     public Image personagem1;
     public Image personagem2;
-    public Image personagem3;
- 
+
+    public Sprite maiatalk;
+    public Sprite maiashy;
+    public Sprite maiawworried;
+    public Sprite maiaquiet;
+    public Sprite maiaangry;
+
+    public Sprite costadispleased;
+    public Sprite costapleased;
+    public Sprite costatalk;
+    public Sprite costatalkangry;
+    public Sprite costazombando;
+    public Sprite costachallenging;
+
+
     DialogueTrigger2 dialogueTrigger;
     TextManager textManager;
     public  int clicks;
@@ -101,18 +113,156 @@ public class GameManager : MonoBehaviour
            SceneManager.LoadScene("Victory");
        }
 
+       //_______________//
+
+        if (clicks == 1)
+        {
+            personagem1.sprite = maiatalk;
+            personagem2.sprite = costapleased;
+        }
+        if (clicks == 2)
+        {
+            personagem1.sprite = maiaquiet;
+            personagem2.sprite = costatalk;
+        }
+        if (clicks == 3)
+        {
+            personagem1.sprite = maiaquiet;
+            personagem2.sprite = costapleased;
+        }
+        if (clicks == 4)
+        {
+            personagem1.sprite = maiatalk;
+            personagem2.sprite = costapleased;
+        }
+        if (clicks == 5)
+        {
+            personagem1.sprite = maiaquiet;
+            personagem2.sprite = costapleased;
+        }
+        if (clicks == 6)
+        {
+            personagem1.sprite = maiawworried;
+            personagem2.sprite = costapleased;
+        }
+        if (clicks == 7)
+        {
+            personagem1.sprite = maiaquiet;
+            personagem2.sprite = costapleased;
+        }
+        if (clicks == 17)
+        {
+            personagem1.sprite = maiaquiet;
+            personagem2.sprite = costazombando;
+        }
+
+        if (clicks == 18)
+        {
+            personagem1.sprite = maiaquiet;
+            personagem2.sprite = costadispleased;
+        }
+
+        if (clicks == 19)
+        {
+            personagem1.sprite = maiaquiet;
+            personagem2.sprite = costatalkangry;
+        }
+        if (clicks == 20)
+        {
+            personagem1.sprite = maiaangry;
+            personagem2.sprite = costadispleased;
+        }
+        if (clicks == 21)
+        {
+            personagem1.sprite = maiaquiet;
+            personagem2.sprite = costatalkangry;
+        }
+
+        if (clicks == 22)
+        {
+            personagem1.sprite = maiatalk;
+            personagem2.sprite = costadispleased;
+        }
+
+        if (clicks == 23)
+        {
+            personagem1.sprite = maiaquiet;
+            personagem2.sprite = costadispleased;
+        }
+
+        if (clicks == 21)
+        {
+            personagem1.sprite = maiaquiet;
+            personagem2.sprite = costatalkangry;
+        }
+
+        if (clicks == 24)
+        {
+            personagem1.sprite = maiaquiet;
+            personagem2.sprite = costatalkangry;
+        }
+
+        if (clicks == 26)
+        {
+            personagem1.sprite = maiaquiet;
+            personagem2.sprite = costapleased;
+        }
+        if (clicks == 27)
+        {
+            personagem1.sprite = maiawworried;
+            personagem2.sprite = costapleased;
+        }
+        if (clicks == 28)
+        {
+            personagem1.sprite = maiaquiet;
+            personagem2.sprite = costapleased;
+        }
+
+        if (clicks == 30)
+        {
+            personagem1.sprite = maiaquiet;
+            personagem2.sprite = costadispleased;
+        }
+
+        if (clicks == 31)
+        {
+            personagem1.sprite = maiatalk;
+            personagem2.sprite = costapleased;
+        }
+
+        if (clicks == 32)
+        {
+            personagem1.sprite = maiaquiet;
+            personagem2.sprite = costapleased;
+        }
+
+        if (clicks == 33)
+        {
+            personagem1.sprite = maiatalk;
+            personagem2.sprite = costadispleased;
+        }
+        if (clicks == 34)
+        {
+            personagem1.sprite = maiaquiet;
+            personagem2.sprite = costatalkangry;
+        }
+        if (clicks == 35)
+        {
+            personagem1.sprite = maiaquiet;
+            personagem2.sprite = costadispleased;
+        }
+        if (clicks == 37)
+        {
+            personagem1.sprite = maiaquiet;
+            personagem2.sprite = costatalkangry;
+        }
+
     }
+
+  
 
     public void ImageSwitch()
     {
-        if (juiz.Contains(clicks))
-        { 
-            personagem3.sprite = sprites[0];
-        }
-        else
-        {
-            personagem3.sprite = sprites[1];
-        }
 
         if (maia.Contains(clicks))
         {

@@ -15,14 +15,24 @@ public class CafeteriaManager : MonoBehaviour
     public Sprite maia;
     public Sprite maia2;
     public Sprite maia3;
+    public Sprite maiatalk;
+    public Sprite maiashy;
+    public Sprite maiawworried;
+    public Sprite maiaquiet;
+    public Sprite maiaangry;
 
     public Sprite diego;
     public Sprite isaac;
 
     public Sprite maria;
+    public Sprite mariatalk;
+    public Sprite mariaralkshy;
+    public Sprite mariaquiershy;
 
     public Sprite klaus;
     public Sprite klaus2;
+    public Sprite klaus3;
+
   
     [SerializeField] Transform positionToTeleport;
     [SerializeField] Transform positionToTeleportCamera;
@@ -110,6 +120,11 @@ public class CafeteriaManager : MonoBehaviour
 
     private void NameManager()
     {
+        if (clicks == 2)
+        {
+            CharName.text = "maia";
+            personagem1.sprite = maia3;
+        }
         if (clicks == 3)
         {
             CharName.text = "Isaac";
@@ -119,6 +134,11 @@ public class CafeteriaManager : MonoBehaviour
         {
             CharName.text = "Maia";
             personagem1.sprite = maia;
+        }
+        if (clicks == 6)
+        {
+            CharName.text = "Maia";
+            personagem1.sprite = maia3;
         }
 
 
@@ -154,46 +174,145 @@ public class CafeteriaManager : MonoBehaviour
         }
         //---------------------------------------//
 
-        if(clicks == 20) {personagem2.sprite = maria; }
-        if (clicks == 21) { CharName.text = "Maria da Penha"; }
+        if(clicks == 20)
+        {
+            personagem2.sprite = maria;
+            personagem1.sprite = maiatalk;
+        }
+        if (clicks == 21) 
+        {
+            CharName.text = "Maria da Penha";
+            personagem2.sprite = mariatalk;
+            personagem1.sprite = maiaquiet;
+        }
 
-        
-        if (clicks == 22) CharName.text = "Maia";
 
-        if (clicks == 25) CharName.text = "Maria da Penha";
+        if (clicks == 22)
+        {
+            CharName.text = "Maia"; personagem1.sprite = maiashy; personagem2.sprite = maria;
+        }
 
-        if (clicks == 27) CharName.text = "Maia";
+        if (clicks == 23)
+        {
+            CharName.text = "Maia"; personagem1.sprite = maiawworried; personagem2.sprite = maria;
+        }
 
-        if (clicks == 28) CharName.text = "Maria da Penha";
+        if (clicks == 25)
+        {
+            CharName.text = "Maria da Penha"; personagem1.sprite = maiaquiet; personagem2.sprite = mariatalk;
+        }
 
-        if (clicks == 29) CharName.text = "Maia";
+        if (clicks == 26)
+        {
+            CharName.text = "Maria da Penha"; personagem1.sprite = maiaquiet; personagem2.sprite = mariaralkshy;
+        }
 
-        if (clicks == 30) CharName.text = "Maria da Penha";
+        if (clicks == 27)
+        {
+            CharName.text = "Maia"; personagem1.sprite = maiatalk; personagem2.sprite = mariaquiershy;
+        }
 
-        if (clicks == 31) CharName.text = "Maia";
+        if (clicks == 28)
+        {
+            CharName.text = "Maria da Penha"; personagem1.sprite = maiaquiet; personagem2.sprite = mariatalk;
+        }
+
+        if (clicks == 29)
+        {
+            CharName.text = "Maia"; personagem1.sprite = maiawworried; personagem2.sprite = maria;
+        }
+
+        if (clicks == 30)
+        {
+            CharName.text = "Maria da Penha"; personagem1.sprite = maiaquiet; personagem2.sprite = mariatalk;
+        }
+
+        if (clicks == 31)
+        {
+            CharName.text = "Maia"; personagem1.sprite = maiatalk; personagem2.sprite = maria;
+        }
 
         //-------------------------------------//
-        if(clicks == 40)
+        if (clicks == 40)
         {
             personagem2.sprite = klaus;
         }
-        if (clicks == 41) CharName.text = "policial";
+        if (clicks == 41)
+        {
+            CharName.text = "policial";
+            personagem1.sprite = maiaquiet;
+            personagem2.sprite = klaus2;
+        }
 
-        if (clicks == 42) CharName.text = "Maia";
+        if (clicks == 42)
+        {
+            CharName.text = "Maia";
+            personagem1.sprite = maiawworried;
+            personagem2.sprite = klaus;
+        }
 
-        if (clicks == 44) CharName.text = "Policial";
+        if (clicks == 44)
+        {
+            CharName.text = "Maia";
+            personagem1.sprite = maiawworried;
+            personagem2.sprite = klaus;
+        }
 
-        if (clicks == 45) CharName.text = "Maia";
+        if (clicks == 45)
+        {
+            CharName.text = "Policial";
+            personagem1.sprite = maiaquiet;
+            personagem2.sprite = klaus3;
+        }
 
-        if (clicks == 46) CharName.text = "Klaus";
+        if (clicks == 46)
+        {
+            CharName.text = "Maia";
+            personagem1.sprite = maiatalk;
+            personagem2.sprite = klaus;
+        }
 
-        if (clicks == 47) CharName.text = "Maia";
+        if (clicks == 47)
+        {
+            CharName.text = "Klaus";
+            personagem1.sprite = maiaquiet;
+            personagem2.sprite = klaus2;
+        }
 
-        if (clicks == 48) CharName.text = "Klaus";
+        if (clicks == 48)
+        {
+            CharName.text = "Maia";
+            personagem1.sprite = maiatalk;
+            personagem2.sprite = klaus;
+        }
 
-        if (clicks == 50) CharName.text = "Maia";
+        if (clicks == 49)
+        {
+            CharName.text = "Maia";
+            personagem1.sprite = maiaquiet;
+            personagem2.sprite = klaus2;
+        }
 
-        if (clicks == 52) CharName.text = "Klaus";
+        if (clicks == 50)
+        {
+            CharName.text = "Klaus";
+            personagem1.sprite = maiawworried;
+            personagem2.sprite = klaus;
+        }
+
+        if (clicks == 51)
+        {
+            CharName.text = "Klaus";
+            personagem1.sprite = maiatalk;
+            personagem2.sprite = klaus;
+        }
+
+        if (clicks == 52)
+        {
+            CharName.text = "Klaus";
+            personagem1.sprite = maiaquiet;
+            personagem2.sprite = klaus3;
+        }
 
     }
     public void SkipText(bool x)

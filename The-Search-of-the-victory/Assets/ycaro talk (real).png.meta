@@ -1,0 +1,715 @@
+fileFormatVersion: 2
+guid: 5248ea3002672f44596ccce0688fac94
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4636711049826349021
+    second: ycaro talk (real)_0
+  - first:
+      213: -6555523071535654381
+    second: ycaro talk (real)_1
+  - first:
+      213: -2446637188651246407
+    second: ycaro talk (real)_2
+  - first:
+      213: -8586337271500161466
+    second: ycaro talk (real)_3
+  - first:
+      213: -5354452833027429562
+    second: ycaro talk (real)_4
+  - first:
+      213: 6001926069513262419
+    second: ycaro talk (real)_5
+  - first:
+      213: -722099612831943788
+    second: ycaro talk (real)_6
+  - first:
+      213: -116329784361547056
+    second: ycaro talk (real)_7
+  - first:
+      213: -2231550445844147451
+    second: ycaro talk (real)_8
+  - first:
+      213: -686382330222882925
+    second: ycaro talk (real)_9
+  - first:
+      213: -2753675559116155739
+    second: ycaro talk (real)_10
+  - first:
+      213: 4506212199140589332
+    second: ycaro talk (real)_11
+  - first:
+      213: -8415703385547285423
+    second: ycaro talk (real)_12
+  - first:
+      213: -5509731997498920084
+    second: ycaro talk (real)_13
+  - first:
+      213: 6219325928339096472
+    second: ycaro talk (real)_14
+  - first:
+      213: 4006580589318605480
+    second: ycaro talk (real)_15
+  - first:
+      213: -2350864312492242079
+    second: ycaro talk (real)_16
+  - first:
+      213: -3782058434277410647
+    second: ycaro talk (real)_17
+  - first:
+      213: -7698947786743666266
+    second: ycaro talk (real)_18
+  - first:
+      213: -6410105815641899429
+    second: ycaro talk (real)_19
+  - first:
+      213: -1407697728598799798
+    second: ycaro talk (real)_20
+  - first:
+      213: -4466099514471323899
+    second: ycaro talk (real)_21
+  - first:
+      213: -6384875862184879370
+    second: ycaro talk (real)_22
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ycaro talk (real)_0
+      rect:
+        serializedVersion: 2
+        x: 620
+        y: 0
+        width: 1362
+        height: 3261
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ddf270b2228e85040800000000000000
+      internalID: 4636711049826349021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ycaro talk (real)_1
+      rect:
+        serializedVersion: 2
+        x: 1309
+        y: 3225
+        width: 65
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31a5d34cf7a1605a0800000000000000
+      internalID: -6555523071535654381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ycaro talk (real)_2
+      rect:
+        serializedVersion: 2
+        x: 1245
+        y: 3203
+        width: 75
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9bc9e24907ccb0ed0800000000000000
+      internalID: -2446637188651246407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ycaro talk (real)_3
+      rect:
+        serializedVersion: 2
+        x: 1350
+        y: 3181
+        width: 41
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64e39827eb337d880800000000000000
+      internalID: -8586337271500161466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ycaro talk (real)_4
+      rect:
+        serializedVersion: 2
+        x: 1405
+        y: 3173
+        width: 48
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64be0d8748921b5b0800000000000000
+      internalID: -5354452833027429562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ycaro talk (real)_5
+      rect:
+        serializedVersion: 2
+        x: 1967
+        y: 2080
+        width: 12
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3559e7de5ff1b4350800000000000000
+      internalID: 6001926069513262419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ycaro talk (real)_6
+      rect:
+        serializedVersion: 2
+        x: 1974
+        y: 2067
+        width: 14
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49374bc5a369af5f0800000000000000
+      internalID: -722099612831943788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ycaro talk (real)_7
+      rect:
+        serializedVersion: 2
+        x: 1981
+        y: 2055
+        width: 8
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0da055e6da6b26ef0800000000000000
+      internalID: -116329784361547056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ycaro talk (real)_8
+      rect:
+        serializedVersion: 2
+        x: 1952
+        y: 1758
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 503581951b0f701e0800000000000000
+      internalID: -2231550445844147451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ycaro talk (real)_9
+      rect:
+        serializedVersion: 2
+        x: 1952
+        y: 1750
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 39fc5f248ea7976f0800000000000000
+      internalID: -686382330222882925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ycaro talk (real)_10
+      rect:
+        serializedVersion: 2
+        x: 1952
+        y: 1741
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a4d4382baaf8c9d0800000000000000
+      internalID: -2753675559116155739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ycaro talk (real)_11
+      rect:
+        serializedVersion: 2
+        x: 1953
+        y: 1721
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41f7e44ce18498e30800000000000000
+      internalID: 4506212199140589332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ycaro talk (real)_12
+      rect:
+        serializedVersion: 2
+        x: 1954
+        y: 1709
+        width: 6
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15cd661fb5a653b80800000000000000
+      internalID: -8415703385547285423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ycaro talk (real)_13
+      rect:
+        serializedVersion: 2
+        x: 1954
+        y: 1704
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c633979a0ff7983b0800000000000000
+      internalID: -5509731997498920084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ycaro talk (real)_14
+      rect:
+        serializedVersion: 2
+        x: 1962
+        y: 1631
+        width: 11
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 893470dfafb7f4650800000000000000
+      internalID: 6219325928339096472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ycaro talk (real)_15
+      rect:
+        serializedVersion: 2
+        x: 1970
+        y: 1506
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8aa8f4671db3a9730800000000000000
+      internalID: 4006580589318605480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ycaro talk (real)_16
+      rect:
+        serializedVersion: 2
+        x: 1975
+        y: 1453
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16bc1cafc5d006fd0800000000000000
+      internalID: -2350864312492242079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ycaro talk (real)_17
+      rect:
+        serializedVersion: 2
+        x: 1945
+        y: 1436
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a8ff1964ed638bc0800000000000000
+      internalID: -3782058434277410647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ycaro talk (real)_18
+      rect:
+        serializedVersion: 2
+        x: 1963
+        y: 1322
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a92dda57c7d72590800000000000000
+      internalID: -7698947786743666266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ycaro talk (real)_19
+      rect:
+        serializedVersion: 2
+        x: 1952
+        y: 1295
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5ebffd09baba07a0800000000000000
+      internalID: -6410105815641899429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ycaro talk (real)_20
+      rect:
+        serializedVersion: 2
+        x: 1955
+        y: 1303
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4a8eb7cf5ad67ce0800000000000000
+      internalID: -1407697728598799798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ycaro talk (real)_21
+      rect:
+        serializedVersion: 2
+        x: 1948
+        y: 1282
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 507646c672a3502c0800000000000000
+      internalID: -4466099514471323899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ycaro talk (real)_22
+      rect:
+        serializedVersion: 2
+        x: 1951
+        y: 1288
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6fa118b5b3d5467a0800000000000000
+      internalID: -6384875862184879370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      ycaro talk (real)_0: 4636711049826349021
+      ycaro talk (real)_1: -6555523071535654381
+      ycaro talk (real)_10: -2753675559116155739
+      ycaro talk (real)_11: 4506212199140589332
+      ycaro talk (real)_12: -8415703385547285423
+      ycaro talk (real)_13: -5509731997498920084
+      ycaro talk (real)_14: 6219325928339096472
+      ycaro talk (real)_15: 4006580589318605480
+      ycaro talk (real)_16: -2350864312492242079
+      ycaro talk (real)_17: -3782058434277410647
+      ycaro talk (real)_18: -7698947786743666266
+      ycaro talk (real)_19: -6410105815641899429
+      ycaro talk (real)_2: -2446637188651246407
+      ycaro talk (real)_20: -1407697728598799798
+      ycaro talk (real)_21: -4466099514471323899
+      ycaro talk (real)_22: -6384875862184879370
+      ycaro talk (real)_3: -8586337271500161466
+      ycaro talk (real)_4: -5354452833027429562
+      ycaro talk (real)_5: 6001926069513262419
+      ycaro talk (real)_6: -722099612831943788
+      ycaro talk (real)_7: -116329784361547056
+      ycaro talk (real)_8: -2231550445844147451
+      ycaro talk (real)_9: -686382330222882925
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

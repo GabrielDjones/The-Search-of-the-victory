@@ -1,2 +1,26 @@
 fileFormatVersion: 2
 guid: 938a20960fd74b5439dac6c6106884fa
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - CharName: {instanceID: 0}
+  - personagem1: {instanceID: 0}
+  - personagem2: {instanceID: 0}
+  - maia: {fileID: -5674602952437822406, guid: 3aebe84e6b78d4746a50436ddfc86d76, type: 3}
+  - maia2: {fileID: -5674602952437822406, guid: 3aebe84e6b78d4746a50436ddfc86d76, type: 3}
+  - maia3: {fileID: -5674602952437822406, guid: 3aebe84e6b78d4746a50436ddfc86d76, type: 3}
+  - diego: {instanceID: 0}
+  - isaac: {instanceID: 0}
+  - maria: {instanceID: 0}
+  - klaus: {instanceID: 0}
+  - klaus2: {instanceID: 0}
+  - positionToTeleport: {instanceID: 0}
+  - positionToTeleportCamera: {instanceID: 0}
+  - player: {instanceID: 0}
+  - Cam: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
