@@ -1657,20 +1657,30 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   armasLines:
-  - Placeholder
-  - Placeholder
+  - 'Klaus:
+
+    Uma arma..? Ele deve ter usado na maria da penha...'
+  - "Klaus: Vou tirar uma foto e dar os documentos da digital pra mo\xE7a advogada...."
   botasLines:
   - Placeholder
   - Placeholder
   sangueLines:
-  - Placeholder
-  - Placeholder
+  - 'Klaus:
+
+    Isso deve ser o sangue da Maria...'
+  - 'Klaus:
+
+    Acho que junto da foto vou entregar um teste de DNA...'
   saidaLines:
-  - Placeholder
-  - Placeholder
+  - "Klaus:\nIsso \xE9 tudo que encontrei."
+  - "Klaus:\nAcho que \xE9 o suficiente."
   secadorLines:
-  - Placeholder
-  - Placeholder
+  - 'Klaus:
+
+    Um secador queimado..?'
+  - 'Klaus:
+
+    Imagino que isso seja importante...'
 --- !u!1 &566904489
 GameObject:
   m_ObjectHideFlags: 0
